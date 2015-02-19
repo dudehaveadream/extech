@@ -1,7 +1,50 @@
 body {
     font-family: $main-font;
+    color: $main-font-color;
+    font: {
+        size: $main-font-size;
+        weight: $light;
+    }
+    background: gray;
+}
+h1, h2, h3, h4, h5 {
+    font: {
+        weight: $bold;
+    }
+}
+h5 {
+    font: {
+        size: 17px;
+    }
+}
+.section {
+    overflow: hidden;
 }
 .container {
     width: $container-width;
     margin: auto;
+}
+.title {
+    text-align: center;
+    text-transform: uppercase;
+    span {
+        position: relative;
+        display: inline-block;
+        &:before, &:after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            height: 1px;
+            width: 1500px;
+            background: $main-color;
+        }
+        &:before {
+            right: 100%;
+            margin-right: 5px;
+        }
+        &:after {
+            left: 100%;
+            margin-left: 5px;
+        }
+    }
 }

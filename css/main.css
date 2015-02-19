@@ -64,11 +64,52 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 
 body {
   font-family: "Ubuntu", sans-serif;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 300;
+  background: gray;
+}
+
+h1, h2, h3, h4, h5 {
+  font-weight: 600;
+}
+
+h5 {
+  font-size: 17px;
+}
+
+.section {
+  overflow: hidden;
 }
 
 .container {
   width: 960px;
   margin: auto;
+}
+
+.title {
+  text-align: center;
+  text-transform: uppercase;
+}
+.title span {
+  position: relative;
+  display: inline-block;
+}
+.title span:before, .title span:after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  height: 1px;
+  width: 1500px;
+  background: #ffe400;
+}
+.title span:before {
+  right: 100%;
+  margin-right: 5px;
+}
+.title span:after {
+  left: 100%;
+  margin-left: 5px;
 }
 
 /* Layout related stylesheets* */
@@ -78,4 +119,23 @@ body {
 
 .footer {
   background: gray;
+}
+
+/* Pages */
+.categories {
+  background: #232323;
+  padding: 15px 0 30px;
+  text-align: center;
+}
+.categories-inner:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.categories-item {
+  width: 25%;
+  float: left;
+}
+.categories-image {
+  margin-bottom: 20px;
 }

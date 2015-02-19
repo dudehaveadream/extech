@@ -1,0 +1,15 @@
+.categories {
+    background: $main-bg;
+    padding: $main-padding;
+    text-align: center;
+    &-inner {
+        @include clearfix;
+    }
+    &-item {
+        width: 25%;
+        float: left;
+    }
+    &-image {
+        margin-bottom: 20px;
+    }
+}
