@@ -1,5 +1,4 @@
 .categories {
-    background: $main-bg;
     padding: $main-padding;
     text-align: center;
     &-inner {
@@ -8,8 +7,31 @@
     &-item {
         width: 25%;
         float: left;
+        &-inner {
+            display: block;
+            width: 210px;
+            height: 210px;
+            margin: auto;
+            border: {
+                width: 1px;
+                style: solid;
+                color: transparent;
+            }
+            @include border-radius (50%);
+            @include transition (all, 0.7s, ease-in-out);
+            &:hover {
+                border: {
+                    color: #5c5c5c;
+                }
+            }
+        }
     }
     &-image {
         margin-bottom: 20px;
+        height: 120px;
+        line-height: 120px;
+        img {
+            vertical-align: bottom;
+        }
     }
 }

@@ -62,15 +62,30 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   display: block;
 }
 
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
 body {
+  background: #232323;
   font-family: "Ubuntu", sans-serif;
   color: #ffffff;
   font-size: 16px;
   font-weight: 300;
-  background: gray;
+}
+
+a {
+  color: #ffffff;
+  text-decoration: none;
 }
 
 h1, h2, h3, h4, h5 {
+  text-transform: uppercase;
+  letter-spacing: 2px;
   font-weight: 600;
 }
 
@@ -90,6 +105,8 @@ h5 {
 .title {
   text-align: center;
   text-transform: uppercase;
+  margin-bottom: 30px;
+  font-size: 54px;
 }
 .title span {
   position: relative;
@@ -114,7 +131,52 @@ h5 {
 
 /* Layout related stylesheets* */
 .header {
-  background: #fff;
+  background: #ffe400;
+  padding: 5px 0 15px;
+  text-align: center;
+}
+.header:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.header-logo {
+  display: inline-block;
+}
+.header-title {
+  float: left;
+  text-align: left;
+  padding-top: 15px;
+}
+.header-info {
+  float: right;
+  text-align: right;
+  padding-top: 15px;
+}
+.header-info p {
+  margin-bottom: 5px;
+}
+.header-info a {
+  color: #232323;
+  font-size: 17px;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: #232323;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+.header-info a:hover {
+  border-bottom-color: transparent;
+}
+.header-title p, .header-info p {
+  color: #232323;
+  text-transform: uppercase;
+  line-height: 1.1;
+  font-size: 21px;
+  font-weight: 500;
 }
 
 .footer {
@@ -123,7 +185,6 @@ h5 {
 
 /* Pages */
 .categories {
-  background: #232323;
   padding: 15px 0 30px;
   text-align: center;
 }
@@ -136,6 +197,32 @@ h5 {
   width: 25%;
   float: left;
 }
+.categories-item-inner {
+  display: block;
+  width: 210px;
+  height: 210px;
+  margin: auto;
+  border-width: 1px;
+  border-style: solid;
+  border-color: transparent;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  border-radius: 50%;
+  -webkit-transition: all 0.7s ease-in-out;
+  -moz-transition: all 0.7s ease-in-out;
+  -ms-transition: all 0.7s ease-in-out;
+  -o-transition: all 0.7s ease-in-out;
+  transition: all 0.7s ease-in-out;
+}
+.categories-item-inner:hover {
+  border-color: #5c5c5c;
+}
 .categories-image {
   margin-bottom: 20px;
+  height: 120px;
+  line-height: 120px;
+}
+.categories-image img {
+  vertical-align: bottom;
 }

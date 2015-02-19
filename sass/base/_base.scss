@@ -1,13 +1,26 @@
+* {
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+         -o-box-sizing: border-box;
+        -ms-box-sizing: border-box;
+            box-sizing: border-box;
+}
 body {
+    background: $gray;
     font-family: $main-font;
     color: $main-font-color;
     font: {
         size: $main-font-size;
         weight: $light;
     }
-    background: gray;
+}
+a {
+    color: $main-font-color;
+    text-decoration: none;
 }
 h1, h2, h3, h4, h5 {
+    text-transform: uppercase;
+    letter-spacing: 2px;
     font: {
         weight: $bold;
     }
@@ -27,6 +40,10 @@ h5 {
 .title {
     text-align: center;
     text-transform: uppercase;
+    margin-bottom: 30px;
+    font: {
+        size: 54px;
+    }
     span {
         position: relative;
         display: inline-block;
@@ -36,7 +53,7 @@ h5 {
             top: 50%;
             height: 1px;
             width: 1500px;
-            background: $main-color;
+            background: $yellow;
         }
         &:before {
             right: 100%;
