@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": ";;;;;;AAAA,IAAK;EACD,UAAU,EAAE,KAAK;;;ACDrB,OAAQ;EACJ,UAAU,EAAE,IAAI;;ACDpB,OAAQ;EACJ,UAAU,EAAE,IAAI",
+"sources": ["../sass/base/_base.scss","../sass/layout/_header.scss","../sass/layout/_footer.scss"],
+"names": [],
+"file": "main.css"
+}
