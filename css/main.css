@@ -63,15 +63,12 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 }
 
 body {
-  background: white;
+  font-family: "Ubuntu", sans-serif;
 }
 
 .container {
-  width: 100px;
-}
-.container-inner {
-  width: 50px;
-  float: left;
+  width: 960px;
+  margin: auto;
 }
 
 /* Layout related stylesheets* */

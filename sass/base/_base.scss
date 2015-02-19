@@ -1,10 +1,7 @@
 body {
-    background: white;
+    font-family: $main-font;
 }
 .container {
-    width: 100px;
-    &-inner {
-        width: 50px;
-        float: left;
-    }
+    width: $container-width;
+    margin: auto;
 }
