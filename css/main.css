@@ -4,7 +4,6 @@
  * <link href="/stylesheets/main.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
 /* Sass utilities */
 /*Mixins*/
-/* menu */
 /* Base stuff */
 /* Reset */
 html, body, div, span, applet, object, iframe,
@@ -295,36 +294,164 @@ h5 {
 .menu {
   height: 65px;
   background-color: #2e2e2e;
+  overflow: visible;
+}
+.menu .container:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.menu .basket {
+  float: right;
+  height: 65px;
+  border-left: 1px solid #4d4d4d;
+}
+.menu .basket:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.menu .basket-order {
+  padding: 18px 10px 0;
+  height: 65px;
+  background: #ffe400;
+  float: right;
+  text-align: center;
+  color: #000000;
+  -webkit-transition: all 0.5s linear;
+  -moz-transition: all 0.5s linear;
+  -ms-transition: all 0.5s linear;
+  -o-transition: all 0.5s linear;
+  transition: all 0.5s linear;
+  font-size: 15px;
+  font-weight: 600;
+}
+.menu .basket-order:hover {
+  background: #232323;
+  color: #ffe400;
+}
+.menu .basket-inner {
+  display: inline-block;
+}
+.menu .basket-inner-count, .menu .basket-inner-summ {
+  float: right;
+  height: 65px;
+}
+.menu .basket-inner-count {
+  background: url(../img/icons/basket.png) no-repeat center 15px;
+  padding: 7px 10px 0 15px;
+  text-align: center;
+}
+.menu .basket-inner-count p {
+  min-width: 22px;
+  min-height: 22px;
+  color: #000000;
+  background: #ffe400;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  border-radius: 50%;
+  padding: 3px 2px;
+  font-size: 17px;
+  font-weight: bold;
+}
+.menu .basket-inner-summ {
+  padding: 15px 20px 0;
+}
+.menu .basket-inner-summ p {
+  margin-bottom: 4px;
+  color: #d5d5d5;
+  font-size: 16px;
+  font-weight: 600;
+}
+.menu .basket-inner-summ a {
+  color: #b1b1b1;
+  font-size: 13px;
+  border-bottom: 1px solid #b1b1b1;
+  -webkit-transition: all 0.4s linear;
+  -moz-transition: all 0.4s linear;
+  -ms-transition: all 0.4s linear;
+  -o-transition: all 0.4s linear;
+  transition: all 0.4s linear;
+}
+.menu .basket-inner-summ a:hover {
+  border-bottom-color: transparent;
 }
 
 nav {
   float: left;
-  width: 650px;
+  height: 65px;
+  padding: 7px 0 0;
 }
-nav ul li {
-  display: inline;
-  width: 100%;
-  height: 100%;
+nav:after {
+  content: "";
+  display: table;
+  clear: both;
 }
-nav ul li a {
-  font-family: "Ubuntu", sans-serif;
+nav ul > li {
+  float: left;
+  position: relative;
+}
+nav ul > li a {
+  display: block;
   color: #fefefe;
   text-transform: uppercase;
-  font-weight: 600;
-  margin-right: 15px;
-  margin-top: 25px;
+  padding: 15px 10px 27px;
+  font-size: 16px;
+  font-weight: bold;
+  border: 1px solid transparent;
+}
+nav ul > li:hover > a {
+  border: 1px solid #9f9f9f;
+  border-bottom: 1px solid #2e2e2e;
+  z-index: 20;
+  background: #2f2f2f;
+  position: relative;
+}
+nav ul > li:hover ul {
+  background: #2f2f2f;
+  visibility: visible;
+  opacity: 1;
+  filter: alpha(opacity=100);
+}
+nav ul > li:hover ul li {
+  max-height: 150px;
+}
+nav ul > li ul {
+  padding-bottom: 5px;
+  position: absolute;
+  top: 58px;
+  z-index: 5;
+  visibility: hidden;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  border: 1px solid #9f9f9f;
+}
+nav ul > li ul li {
+  width: 240px;
+  max-height: 0;
+  -webkit-transition: max-height 0.6s ease;
+  -moz-transition: max-height 0.6s ease;
+  -ms-transition: max-height 0.6s ease;
+  -o-transition: max-height 0.6s ease;
+  transition: max-height 0.6s ease;
+}
+nav ul > li ul li a {
+  color: #9f9f9f;
+  font-weight: 300;
+  padding: 15px 20px;
+  border-color: transparent;
+  border-bottom: 1px solid #5d5d5d;
+}
+nav ul > li ul li a:hover {
+  border-color: transparent;
+  border-bottom: 1px solid #5d5d5d;
+  color: #ffffff;
 }
 
 .nav-logo {
   position: absolute;
   visibility: hidden;
-}
-
-.basket {
-  float: right;
-  width: 309px;
-  height: 65px;
-  border-left: 1px solid #4d4d4d;
 }
 
 /* Pages */
