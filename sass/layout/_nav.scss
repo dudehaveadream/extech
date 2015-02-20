@@ -1,1 +1,39 @@
 /*Nav*/
+.menu {
+    height: 65px;
+    background-color: #2e2e2e;
+}
+
+nav {
+    width: $nav-width;
+    ul {
+        li {
+            display: inline;
+            width: 100%;
+            height: 100%;
+            a {
+                font-family: $main-font;
+                color: $while-darken;
+                text-transform: uppercase;
+                font-weight: 600;
+                margin-right: 15px;
+                margin-top: 25px;
+            }
+        }
+    }
+
+}
+.nav-logo {
+    position: absolute;
+    visibility: hidden;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-delay: .3s;
+    -webkit-animation-iteration-count: infinity;
+}
+
+.basket {
+    width: $container-width - $nav-width - 1;
+    float: right;
+    height: 100%;
+    border-left: 1px solid #4d4d4d;
+}

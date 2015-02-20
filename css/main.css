@@ -4,6 +4,7 @@
  * <link href="/stylesheets/main.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
 /* Sass utilities */
 /*Mixins*/
+/* menu */
 /* Base stuff */
 /* Reset */
 html, body, div, span, applet, object, iframe,
@@ -288,6 +289,44 @@ h5 {
 }
 .footer-copyright-map a:hover {
   border-bottom-color: transparent;
+}
+
+/*Nav*/
+.menu {
+  height: 65px;
+  background-color: #2e2e2e;
+}
+
+nav {
+  width: 650px;
+}
+nav ul li {
+  display: inline;
+  width: 100%;
+  height: 100%;
+}
+nav ul li a {
+  font-family: "Ubuntu", sans-serif;
+  color: #fefefe;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin-right: 15px;
+  margin-top: 25px;
+}
+
+.nav-logo {
+  position: absolute;
+  visibility: hidden;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-delay: .3s;
+  -webkit-animation-iteration-count: infinity;
+}
+
+.basket {
+  width: 309px;
+  float: right;
+  height: 100%;
+  border-left: 1px solid #4d4d4d;
 }
 
 /* Pages */

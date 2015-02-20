@@ -12,10 +12,18 @@
       -ms-border-radius: $radius;
           border-radius: $radius;
 }
+
 @mixin transition($transition-property, $transition-time, $method) {
     -webkit-transition: $transition-property $transition-time $method;
     -moz-transition: $transition-property $transition-time $method;
     -ms-transition: $transition-property $transition-time $method;
     -o-transition: $transition-property $transition-time $method;
     transition: $transition-property $transition-time $method;
+}
+
+// animate.css: single animation options
+@mixin animate_options($duration, $delay, $iteration){
+    -webkit-animation-duration: $duration;
+    -webkit-animation-delay: $delay;
+    -webkit-animation-iteration-count: $iteration;
 }
