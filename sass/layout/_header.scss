@@ -28,7 +28,7 @@
                 style: solid;
                 color: $gray;
             }
-            @include transition (all, 0.5s, ease-in-out);
+            @include transition (all, 0.5s, linear);
             &:hover {
                 border-bottom: {
                     color: transparent;

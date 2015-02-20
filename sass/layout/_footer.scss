@@ -1,3 +1,97 @@
 .footer {
-    background: gray;
+    padding: 70px 0 30px;
+    &-inner {
+        margin-bottom: 40px;
+        @include clearfix;
+        &-section {
+            width: 25%;
+            float: left;
+            h5 {
+                margin-bottom: 20px;
+                letter-spacing: 1px;
+                color: $yellow;
+            }
+            ul {
+                li {
+                    margin: 7px 0;
+                    a {
+                        color: $gray-light;
+                        font: {
+                            size: 17px;
+                        }
+                        border-bottom: {
+                            width: 1px;
+                            style: solid;
+                            color: transparent
+                        }
+                        @include transition (all, 0.5s, linear);
+                        &:hover {
+                            color: #d4d4d4;
+                            border-bottom: {
+                                color: #d4d4d4;
+                            }
+                        }
+                    }
+                }
+            }
+            &-phone, &-adress {
+                text-align: right;
+            }
+            &-phone {
+                margin-bottom: 35px;
+                p {
+                    margin-bottom: 15px;
+                    font: {
+                        size: 25px;
+                    }
+                }
+            }
+            &-adress {
+                line-height: 1.4;
+                font: {
+                    size: 17px;
+                }
+            }
+        }
+    }
+    &-copyright {
+        @include clearfix;
+        &-info {
+            width: 575px;
+            float: left;
+            h4 {
+                margin-bottom: 20px;
+                span {
+                    margin-right: 18px;
+                }
+            }
+            p {
+                color: #474747;
+                line-height: 1.2;
+                font: {
+                    size: 17px;
+                }
+            }
+        }
+        &-map {
+            float: right;
+            a {
+                color: $yellow;
+                font: {
+                    size: 17px;
+                }
+                border-bottom: {
+                    width: 1px;
+                    style: solid;
+                    color: $yellow;
+                }
+                @include transition (all, 0.5s, linear);
+                &:hover {
+                    border-bottom: {
+                        color: transparent;
+                    }
+                }
+            }
+        }
+    }
 }
