@@ -291,13 +291,14 @@ h5 {
   border-bottom-color: transparent;
 }
 
-/*Nav*/
+/* Top nagigation */
 .menu {
   height: 65px;
   background-color: #2e2e2e;
 }
 
 nav {
+  float: left;
   width: 650px;
 }
 nav ul li {
@@ -317,15 +318,12 @@ nav ul li a {
 .nav-logo {
   position: absolute;
   visibility: hidden;
-  -webkit-animation-duration: 1s;
-  -webkit-animation-delay: .3s;
-  -webkit-animation-iteration-count: infinity;
 }
 
 .basket {
-  width: 309px;
   float: right;
-  height: 100%;
+  width: 309px;
+  height: 65px;
   border-left: 1px solid #4d4d4d;
 }
 

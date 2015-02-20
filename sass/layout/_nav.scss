@@ -1,10 +1,14 @@
-/*Nav*/
+/* Top nagigation */
+
+$menu-height: 65px;
+
 .menu {
-    height: 65px;
+    height: $menu-height;
     background-color: #2e2e2e;
 }
 
 nav {
+    float: left;
     width: $nav-width;
     ul {
         li {
@@ -26,14 +30,11 @@ nav {
 .nav-logo {
     position: absolute;
     visibility: hidden;
-    -webkit-animation-duration: 1s;
-    -webkit-animation-delay: .3s;
-    -webkit-animation-iteration-count: infinity;
 }
 
 .basket {
-    width: $container-width - $nav-width - 1;
     float: right;
-    height: 100%;
+    width: $container-width - $nav-width - 1;
+    height: $menu-height;
     border-left: 1px solid #4d4d4d;
 }
