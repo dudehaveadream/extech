@@ -1,0 +1,86 @@
+.goods {
+    &-inner {
+        height: $goods-height;
+        background: #161616;
+        @include clearfix;
+        .container {
+            height: $goods-height;
+        }
+        &-item {
+            width: 25%;
+            height: $goods-height;
+            float: left;
+            overflow: hidden;
+            position: relative;
+            border-left: 1px solid transparent;
+            border-right: 1px solid transparent;
+            img {
+                margin-left: -100px;
+                height: $goods-height;
+            }
+            .pouring {
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 100%;
+                height: 100%;
+                background: rgba(99,99,99,.4);
+                @include transition (all, 0.5s, linear);
+            }
+            &-info {
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                width: 100%;
+                background: rgba(0,0,0,.0);
+                padding: 15px 7px 10px;
+                text-align: center;
+                z-index: 5;
+                @include transition (all, 0.5s, linear);
+                p {
+                    margin-top: 2px;
+                    font: {
+                        size: 16px;
+                    }
+                }
+                .btn-holder {
+                    margin-top: 15px;
+                    @include clearfix;
+                    a {
+                        opacity: 0;
+                        @include transition (all, 0.5s, linear);
+                    }
+                    .btn-yellow {
+                        float: left;
+                    }
+                    .btn-transparent {
+                        float: right;
+                    }
+                }
+            }
+            &:hover {
+                .pouring {
+                    background: rgba(99,99,99,.0);
+                }
+                .goods-inner-item-info {
+                    background: rgba(0,0,0,.7);
+                    .btn-holder {
+                        a {
+                            opacity: 1;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+.new-goods {
+    margin-bottom: 65px;
+    .title-second {
+        text-align: right;
+        padding-right: 160px;
+    }
+    .title-second-inner-subtitle {
+        left: -150px;
+    }
+}

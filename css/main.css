@@ -135,6 +135,7 @@ h5 {
 
 .title-second {
   line-height: 37px;
+  margin-top: 20px;
 }
 .title-second-inner-subtitle {
   position: absolute;
@@ -146,6 +147,34 @@ h5 {
 .title-second-inner-head {
   line-height: 1;
   font-size: 37px;
+}
+
+.btn {
+  display: inline-block;
+  height: 36px;
+  width: 108px;
+  font-size: 10px;
+  font-weight: 600;
+}
+
+.btn-yellow {
+  background: #ffe400;
+  color: #000000;
+  padding: 13px 10px;
+}
+.btn-yellow:hover {
+  background: #232323;
+  color: #ffe400;
+}
+
+.btn-transparent {
+  border: 4px solid #ffe400;
+  padding-top: 10px;
+}
+.btn-transparent:hover {
+  background: #ffe400;
+  color: #232323;
+  border-color: transparent;
 }
 
 /* Layout related stylesheets* */
@@ -452,6 +481,106 @@ nav ul > li ul li a:hover {
 .nav-logo {
   position: absolute;
   visibility: hidden;
+}
+
+.goods-inner {
+  height: 445px;
+  background: #161616;
+}
+.goods-inner:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.goods-inner .container {
+  height: 445px;
+}
+.goods-inner-item {
+  width: 25%;
+  height: 445px;
+  float: left;
+  overflow: hidden;
+  position: relative;
+  border-left: 1px solid transparent;
+  border-right: 1px solid transparent;
+}
+.goods-inner-item img {
+  margin-left: -100px;
+  height: 445px;
+}
+.goods-inner-item .pouring {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(99, 99, 99, 0.4);
+  -webkit-transition: all 0.5s linear;
+  -moz-transition: all 0.5s linear;
+  -ms-transition: all 0.5s linear;
+  -o-transition: all 0.5s linear;
+  transition: all 0.5s linear;
+}
+.goods-inner-item-info {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background: transparent;
+  padding: 15px 7px 10px;
+  text-align: center;
+  z-index: 5;
+  -webkit-transition: all 0.5s linear;
+  -moz-transition: all 0.5s linear;
+  -ms-transition: all 0.5s linear;
+  -o-transition: all 0.5s linear;
+  transition: all 0.5s linear;
+}
+.goods-inner-item-info p {
+  margin-top: 2px;
+  font-size: 16px;
+}
+.goods-inner-item-info .btn-holder {
+  margin-top: 15px;
+}
+.goods-inner-item-info .btn-holder:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.goods-inner-item-info .btn-holder a {
+  opacity: 0;
+  -webkit-transition: all 0.5s linear;
+  -moz-transition: all 0.5s linear;
+  -ms-transition: all 0.5s linear;
+  -o-transition: all 0.5s linear;
+  transition: all 0.5s linear;
+}
+.goods-inner-item-info .btn-holder .btn-yellow {
+  float: left;
+}
+.goods-inner-item-info .btn-holder .btn-transparent {
+  float: right;
+}
+.goods-inner-item:hover .pouring {
+  background: rgba(99, 99, 99, 0);
+}
+.goods-inner-item:hover .goods-inner-item-info {
+  background: rgba(0, 0, 0, 0.7);
+}
+.goods-inner-item:hover .goods-inner-item-info .btn-holder a {
+  opacity: 1;
+}
+
+.new-goods {
+  margin-bottom: 65px;
+}
+.new-goods .title-second {
+  text-align: right;
+  padding-right: 160px;
+}
+.new-goods .title-second-inner-subtitle {
+  left: -150px;
 }
 
 /* Pages */

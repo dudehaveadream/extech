@@ -35,7 +35,7 @@ $(function(){
             // not scrolled past the menu; only show the original menu.
             miniLogo.css('visibility','hidden');
             miniLogo.removeClass(animateClass);
-            $('nav').css("margin-left", "0");
+            $('nav').css("margin-left", "0").removeClass("animated fadeInDown");
             $('.cloned').hide();
             $('.original').css('visibility','visible');
         }
