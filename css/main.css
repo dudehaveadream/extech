@@ -106,17 +106,17 @@ h5 {
   margin: auto;
 }
 
-.title {
+.title-main, .title-second {
   text-align: center;
   text-transform: uppercase;
   margin-bottom: 30px;
   font-size: 54px;
 }
-.title span {
+.title-main-head, .title-second-inner {
   position: relative;
   display: inline-block;
 }
-.title span:before, .title span:after {
+.title-main-head:before, .title-second-inner:before, .title-main-head:after, .title-second-inner:after {
   content: '';
   position: absolute;
   top: 50%;
@@ -124,13 +124,28 @@ h5 {
   width: 1500px;
   background: #ffe400;
 }
-.title span:before {
+.title-main-head:before, .title-second-inner:before {
   right: 100%;
   margin-right: 5px;
 }
-.title span:after {
+.title-main-head:after, .title-second-inner:after {
   left: 100%;
   margin-left: 5px;
+}
+
+.title-second {
+  line-height: 37px;
+}
+.title-second-inner-subtitle {
+  position: absolute;
+  top: -23px;
+  left: -17%;
+  font-size: 30px;
+  font-weight: 300;
+}
+.title-second-inner-head {
+  line-height: 1;
+  font-size: 37px;
 }
 
 /* Layout related stylesheets* */
@@ -279,6 +294,10 @@ h5 {
 .categories {
   padding: 15px 0 30px;
   text-align: center;
+}
+.categories .title-second {
+  text-align: left;
+  padding-left: 140px;
 }
 .categories-inner:after {
   content: "";

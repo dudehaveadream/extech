@@ -42,14 +42,15 @@ h5 {
     width: $container-width;
     margin: auto;
 }
-.title {
+
+.title-main {
     text-align: center;
     text-transform: uppercase;
     margin-bottom: 30px;
     font: {
         size: 54px;
     }
-    span {
+    &-head {
         position: relative;
         display: inline-block;
         &:before, &:after {
@@ -70,3 +71,29 @@ h5 {
         }
     }
 }
+.title-second {
+    @extend .title-main;
+    line-height: 37px;
+    &-inner {
+        @extend .title-main-head;
+        &-subtitle {
+            position: absolute;
+            top: -23px;
+            left: -17%;
+            font: {
+                size: 30px;
+                weight: $light;
+            }
+        }
+        &-head {
+            line-height: 1;
+            font: {
+                size: 37px;
+            }
+        }
+    }
+}
+
+
+
+
