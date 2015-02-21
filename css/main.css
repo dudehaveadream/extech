@@ -326,7 +326,7 @@ h5 {
 #slider {
   width: 100%;
   min-width: 960px;
-  min-height: min-slider-height;
+  min-height: 580px;
   position: relative;
 }
 #slider:after {
@@ -344,7 +344,7 @@ h5 {
 .rslides_container {
   position: relative;
   min-width: 960px;
-  min-height: min-slider-height;
+  min-height: 580px;
 }
 
 .rslides {
@@ -353,7 +353,7 @@ h5 {
   overflow: hidden;
   width: 100%;
   min-width: 960px;
-  min-height: min-slider-height;
+  min-height: 580px;
   padding: 0;
   margin: 0;
 }
@@ -363,7 +363,7 @@ h5 {
   display: none;
   width: 100%;
   min-width: 960px;
-  min-height: min-slider-height;
+  min-height: 580px;
   left: 0;
   top: 0;
 }
@@ -378,7 +378,7 @@ h5 {
   float: left;
   width: 100%;
   min-width: 960px;
-  min-height: min-slider-height;
+  min-height: 580px;
   border: 0;
 }
 .rslides .caption {
