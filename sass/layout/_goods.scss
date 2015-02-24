@@ -2,7 +2,14 @@
     &-inner {
         height: $goods-height;
         background: #161616;
+        -webkit-box-shadow: 0 2px 15px rgba(0,0,0,.5),
+                    0 -2px 15px rgba(0,0,0,.5);
+        -moz-box-shadow: 0 2px 15px rgba(0,0,0,.5),
+                    0 -2px 15px rgba(0,0,0,.5);
+        box-shadow: 0 2px 15px rgba(0,0,0,.5),
+                    0 -2px 15px rgba(0,0,0,.5);
         @include clearfix;
+        margin-bottom: 15px;
         .container {
             height: $goods-height;
         }
@@ -14,7 +21,7 @@
             position: relative;
             border-left: 1px solid transparent;
             border-right: 1px solid transparent;
-            img {
+            img.item {
                 margin-left: -100px;
                 height: $goods-height;
             }
@@ -48,7 +55,6 @@
                     @include clearfix;
                     a {
                         opacity: 0;
-                        @include transition (all, 0.5s, linear);
                     }
                     .btn-yellow {
                         float: left;

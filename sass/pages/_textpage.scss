@@ -1,0 +1,151 @@
+.text-page-name {
+    background: url(../img/category_bg.jpg) no-repeat;
+    background-attachment: fixed;
+    padding: 55px 0;
+    @include background-size (cover);
+}
+
+.titles h1 {
+    margin-bottom: 70px;
+    margin-top: 20px;
+}
+
+.text-column {
+    @include clearfix;
+    &-item {
+        float: left;
+        .image-holder {
+            margin-bottom: 10px;
+            img {
+                width: 100%;
+            }
+        }
+        h5 {
+            font-size: 17px;
+        }
+        &-title {
+            margin-bottom: 45px;
+            span {
+                font-size: 17px;
+                font-style: italic;
+                color: #5b5b5b;
+            }
+        }
+        &-content {
+            h5 {
+                margin-bottom: 25px;
+            }
+            p {
+                font-size: 17px;
+                a {
+                    color: $yellow;
+                    font-weight: $bold;
+                    text-decoration: underline;
+                    &:hover {
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+    }
+}
+.text-two-column {
+    .text-column-item {
+        width: 460px;
+        margin-right: 40px;
+        padding-bottom: 70px;
+    }
+    .text-column-item:nth-child(2n+2) {
+        margin-right: 0;
+    }
+}
+.text-three-column {
+    .text-column-item {
+        width: 290px;
+        margin-right: 45px;
+        padding-bottom: 55px;
+        &-title {
+            margin-bottom: 25px;
+        }
+    }
+    .text-column-item:nth-child(3n+3) {
+        margin-right: 0;
+    }
+}
+.text-four-column {
+    .text-column-item {
+        width: 215px;
+        margin-right: 25px;
+        padding-bottom: 40px;
+    }
+    .text-column-item:nth-child(4n+4) {
+        margin-right: 0;
+    }
+}
+
+.image-text-info {
+    background: url(../img/textpage_bg.jpg);
+    @include background-size (cover);
+    padding: 60px 0 40px;
+    .container {
+        @include clearfix;
+    }
+    .title-second {
+        text-align: left;
+        padding-left: 50px;
+    }
+    .left, .right {
+        width: 50%;
+        margin-bottom: 70px;
+    }
+    .left {
+        float: left;
+        h5 {
+            font-size: 17px;
+            margin-bottom: 35px;
+            margin-top: 5px;
+        }
+        p {
+            font-size: 17px;
+            max-width: 440px;
+        }
+        .inner {
+            margin-bottom: 70px;
+        }
+        .inner50 {
+            width: 47%;
+            display: inline-block;
+        }
+        .inner50first {
+            margin-right: 3%;
+        }
+    }
+    .right {
+        float: right;
+        text-align: right;
+        img {
+            height: 315px;
+            width: 430px;
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
