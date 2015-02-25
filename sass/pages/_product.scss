@@ -100,6 +100,93 @@
     }
 }
 
+.product-modifications {
+    background: url(../img/modifications_bg.jpg) no-repeat;
+    padding: 70px 0;
+    @include background-size (cover);
+    .title-second {
+        .title-second-inner-subtitle {
+            left: -230px;
+        }
+    }
+    &-inner {
+
+    }
+    &-item {
+        background: #0c0b0a;
+        margin-bottom: 40px;
+        @include clearfix;
+        h3 {
+            font-size: 30px;
+            margin-bottom: 45px;
+            line-height: 1.1;
+            span {
+                display: block;
+                padding-left: 105px;
+            }
+        }
+        .description {
+            width: 645px;
+            padding-top: 30px;
+            padding-bottom: 15px;
+            p {
+                font-size: 17px;
+                line-height: 1.1;
+            }
+            .btn-holder {
+                margin-top: 45px;
+                p {
+                    display: inline-block;
+                    font-size: 38px;
+                    font-weight: $bold;
+                }
+            }
+        }
+    }
+    &-left {
+        .image-holder {
+            float: left;
+        }
+        .description {
+            float: right;
+            padding-right: 20px;
+            p {
+                padding: 0 100px 0 90px;
+            }
+            .btn-holder {
+                text-align: right;
+                .btn {
+                    margin-left: 10px;
+                }
+                p {
+                    padding: 0;
+                }
+            }
+        }
+    }
+    &-right {
+        .image-holder {
+            float: right;
+        }
+        .description {
+            float: left;
+            padding-left: 20px;
+            p {
+                padding-right: 190px;
+            }
+            .btn-holder {
+                .btn {
+                    margin-left: 10px;
+                }
+                p {
+                    padding: 0;
+                }
+            }
+        }
+    }
+}
+
+
 .product-order {
     padding: 95px 0 60px;
     background: #2f2f2f;

@@ -806,6 +806,9 @@ nav ul > li ul li a:hover {
   visibility: hidden;
 }
 
+.goods {
+  padding-top: 30px;
+}
 .goods-inner {
   height: 445px;
   background: #161616;
@@ -895,7 +898,7 @@ nav ul > li ul li a:hover {
 }
 
 .new-goods {
-  margin-bottom: 65px;
+  margin-bottom: 30px;
 }
 .new-goods .title-second {
   text-align: right;
@@ -1306,6 +1309,88 @@ nav ul > li ul li a:hover {
   line-height: 1.1;
   font-size: 14px;
   padding: 0 20px;
+}
+
+.product-modifications {
+  background: url(../img/modifications_bg.jpg) no-repeat;
+  padding: 70px 0;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -ms-background-size: cover;
+  background-size: cover;
+}
+.product-modifications .title-second .title-second-inner-subtitle {
+  left: -230px;
+}
+.product-modifications-item {
+  background: #0c0b0a;
+  margin-bottom: 40px;
+}
+.product-modifications-item:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.product-modifications-item h3 {
+  font-size: 30px;
+  margin-bottom: 45px;
+  line-height: 1.1;
+}
+.product-modifications-item h3 span {
+  display: block;
+  padding-left: 105px;
+}
+.product-modifications-item .description {
+  width: 645px;
+  padding-top: 30px;
+  padding-bottom: 15px;
+}
+.product-modifications-item .description p {
+  font-size: 17px;
+  line-height: 1.1;
+}
+.product-modifications-item .description .btn-holder {
+  margin-top: 45px;
+}
+.product-modifications-item .description .btn-holder p {
+  display: inline-block;
+  font-size: 38px;
+  font-weight: 600;
+}
+.product-modifications-left .image-holder {
+  float: left;
+}
+.product-modifications-left .description {
+  float: right;
+  padding-right: 20px;
+}
+.product-modifications-left .description p {
+  padding: 0 100px 0 90px;
+}
+.product-modifications-left .description .btn-holder {
+  text-align: right;
+}
+.product-modifications-left .description .btn-holder .btn {
+  margin-left: 10px;
+}
+.product-modifications-left .description .btn-holder p {
+  padding: 0;
+}
+.product-modifications-right .image-holder {
+  float: right;
+}
+.product-modifications-right .description {
+  float: left;
+  padding-left: 20px;
+}
+.product-modifications-right .description p {
+  padding-right: 190px;
+}
+.product-modifications-right .description .btn-holder .btn {
+  margin-left: 10px;
+}
+.product-modifications-right .description .btn-holder p {
+  padding: 0;
 }
 
 .product-order {
