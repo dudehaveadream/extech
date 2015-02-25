@@ -2,6 +2,7 @@
     width: 100%;
     min-width: 960px;
     min-height: $min-slider-height;
+    max-height: $max-slider-height;
     position: relative;
     &:after {
         content: '';
@@ -20,6 +21,7 @@
     position: relative;
     min-width: $min-slider-width;
     min-height: $min-slider-height;
+    max-height: $max-slider-height;
 }
 .rslides {
     position: relative;
@@ -28,6 +30,7 @@
     width: 100%;
     min-width: $min-slider-width;
     min-height: $min-slider-height;
+    max-height: $max-slider-height;
     padding: 0;
     margin: 0;
     li {
@@ -37,6 +40,7 @@
         width: 100%;
         min-width: $min-slider-width;
         min-height: $min-slider-height;
+        max-height: $max-slider-height;
         left: 0;
         top: 0;
     }
@@ -52,6 +56,7 @@
         width: 100%;
         min-width: $min-slider-width;
         min-height: $min-slider-height;
+        max-height: $max-slider-height;
         border: 0;
     }
     .caption {
@@ -157,13 +162,14 @@
     text-indent: -9999px;
     overflow: hidden;
     text-decoration: none;
-    height: 171px;
-    width: 31px;
-    background: url(../img/slider/arrows.png) no-repeat;
+    height: 188px;
+    width: 35px;
+    background: url(../img/slider/arrows3.png) no-repeat;
     margin-top: -135px;
+    opacity: 0.4;
     @include transition (all, 0.3s, linear);
     &:hover {
-        opacity: 0.5;
+        opacity: 0.9;
     }
     &:focus {
         outline: none;

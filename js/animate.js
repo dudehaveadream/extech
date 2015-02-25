@@ -14,13 +14,13 @@ $(function(){
 
         // animation element & effect
         var miniLogo = $('.nav-logo img');
-        var animateClass = "animated bounceIn";
+        var animateClass = "animated fadeIn";
 
         if ($(window).scrollTop() >= (orgElementTop)) {
             // scrolled past the original position; now only show the cloned, sticky element.
 
             // push menu for from left
-            $('nav').css("margin-left", "110px").addClass("animated fadeInDown");
+            $('nav').css("margin-left", "110px").addClass("animated fadeInLeft");
             // animate logo
             miniLogo.css("visibility", "visible").addClass(animateClass);
 
@@ -35,10 +35,22 @@ $(function(){
             // not scrolled past the menu; only show the original menu.
             miniLogo.css('visibility','hidden');
             miniLogo.removeClass(animateClass);
-            $('nav').css("margin-left", "0").removeClass("animated fadeInDown");
+            $('nav').css("margin-left", "0").removeClass("animated fadeInLeft");
             $('.cloned').hide();
             $('.original').css('visibility','visible');
         }
     }
 
 });
+
+
+wow = new WOW(
+    {
+        animateClass: 'animated',
+        offset:       100,
+        callback:     function(box) {
+            console.log("WOW: animating <" + box.tagName.toLowerCase() + ">")
+        }
+    }
+);
+wow.init();

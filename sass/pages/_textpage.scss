@@ -22,6 +22,7 @@
         }
         h5 {
             font-size: 17px;
+            margin-bottom: 3px;
         }
         &-title {
             margin-bottom: 45px;
@@ -39,7 +40,7 @@
                 font-size: 17px;
                 a {
                     color: $yellow;
-                    font-weight: $bold;
+                    font-weight: $medium;
                     text-decoration: underline;
                     &:hover {
                         text-decoration: none;
@@ -89,10 +90,6 @@
     padding: 60px 0 40px;
     .container {
         @include clearfix;
-    }
-    .title-second {
-        text-align: left;
-        padding-left: 50px;
     }
     .left, .right {
         width: 50%;

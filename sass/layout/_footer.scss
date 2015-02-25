@@ -24,11 +24,11 @@
                             style: solid;
                             color: transparent
                         }
-                        @include transition (all, 0.5s, linear);
+                        @include transition (all, 0.3s, linear);
                         &:hover {
-                            color: #d4d4d4;
+                            color: #ffffff;
                             border-bottom: {
-                                color: #d4d4d4;
+                                color: #ffffff;
                             }
                         }
                     }
@@ -40,7 +40,7 @@
             &-phone {
                 margin-bottom: 35px;
                 p {
-                    margin-bottom: 15px;
+                    margin-bottom: 12px;
                     font: {
                         size: 25px;
                     }
@@ -66,7 +66,7 @@
                 }
             }
             p {
-                color: #474747;
+                color: #9f9f9f;
                 line-height: 1.2;
                 font: {
                     size: 17px;

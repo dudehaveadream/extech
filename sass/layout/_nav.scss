@@ -38,8 +38,8 @@ $menu-height: 65px;
                 height: $menu-height;
             }
             &-count {
-                background: url(../img/icons/basket.png) no-repeat center 15px;
-                padding: 7px 10px 0 15px;
+                background: url(../img/icons/basket.png) no-repeat center 17px;
+                padding: 9px 10px 0 15px;
                 text-align: center;
                 p {
                     min-width: 22px;
@@ -71,9 +71,10 @@ $menu-height: 65px;
                         size: 13px;
                     }
                     border-bottom: 1px solid #b1b1b1;
-                    @include transition (all, 0.4s, linear);
+                    @include transition (all, 0.3s, linear);
                     &:hover {
                         border-bottom-color: transparent;
+                        color: #ffffff;
                     }
                 }
             }
@@ -81,10 +82,14 @@ $menu-height: 65px;
     }
 }
 
+.nav-logo {
+    padding-top: 7px;
+}
+
 nav {
     float: left;
     height: $menu-height;
-    padding: 7px 0 0;
+    padding: 8px 0 0;
     @include clearfix;
     ul {
         > li {

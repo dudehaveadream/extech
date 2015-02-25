@@ -16,7 +16,21 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <script src="js/custom.js" type="text/javascript"></script>
     <script src="js/animate.js" type="text/javascript"></script>
-
+    <script src="js/wow.js" type="text/javascript"></script>
+    <script>
+        $(document).ready(function(){
+            wow = new WOW(
+              {
+                animateClass: 'animated',
+                offset:       100,
+                callback:     function(box) {
+                  console.log("WOW: animating <" + box.tagName.toLowerCase() + ">")
+                }
+              }
+            );
+            wow.init();
+        });
+    </script>
 </head>
 <body>
 
@@ -110,7 +124,7 @@
     </div>
 </div><!-- Name end -->
 
-<div class="section category-item category-item-left">
+<div class="section category-item category-item-left wow fadeInUp">
     <div class="container">
         <div class="item-description">
             <div class="item-description-inner">
@@ -130,7 +144,7 @@
     </div>
 </div><!-- Category item end -->
 
-<div class="section category-item category-item-right">
+<div class="section category-item category-item-right wow fadeInUp">
     <div class="container">
         <div class="item-description">
             <div class="item-description-inner">
@@ -146,6 +160,26 @@
         </div>
         <div class="item-image">
             <img src="img/goods/segway.jpg" alt="">
+        </div>
+    </div>
+</div><!-- Category item end -->
+
+<div class="section category-item category-item-left wow fadeInUp">
+    <div class="container">
+        <div class="item-description">
+            <div class="item-description-inner">
+                <h2>DTV SHReDDER</h2>
+                <p>Хотя Segway и напоминает непокорного горного козла, в целом он подходит разве что по газону покататься, и то вам придется постараться. Зато у него прикольный красненький фонарик спереди</p>
+                <h3>от 1 329 900 р</h3>
+            </div>
+            <div class="btn-holder">
+                <a href="#" class="btn btn-yellow">БЫСТРЫЙ ЗАКАЗ</a>
+                <a href="#" class="btn btn-transparent"><img src="img/icons/basket_small.png" alt="">В КОРЗИНУ</a>
+                <a href="#" class="btn btn-transparent">ПОДРОБНОСТИ</a>
+            </div>
+        </div>
+        <div class="item-image">
+            <img src="img/goods/shredder.jpg" alt="">
         </div>
     </div>
 </div><!-- Category item end -->
@@ -168,7 +202,7 @@
                     <li><a href="#">Техника</a></li>
                     <li><a href="#">Одежда</a></li>
                     <li><a href="#">Гаджеты</a></li>
-                    <li><a href="#">Аксесссуары</a></li>
+                    <li><a href="#">Аксессуары</a></li>
                 </ul>
             </div>
             <div class="footer-inner-section">
