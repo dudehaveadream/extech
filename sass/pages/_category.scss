@@ -53,30 +53,6 @@
         .btn-holder {
             @include clearfix;
             text-align: center;
-            .btn {
-                height: 55px;
-                width: 165px;
-                font: {
-                    size: 14px;
-                    weight: $bold;
-                }
-            }
-            .btn-yellow {
-                padding: 21px 10px;
-            }
-            .btn-transparent {
-                border: 7px solid $yellow;
-                padding-top: 14px;
-                img {
-                    margin-left: 15px;
-                    margin-top: -4px;
-                    width: 21px;
-                    height: 21px;
-                }
-                &:hover {
-                    border-color: transparent;
-                }
-            }
         }
     }
     .item-image {

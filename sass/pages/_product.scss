@@ -1,0 +1,142 @@
+.product-info {
+    padding: 30px 0 60px;
+    .title-second {
+        padding-right: 100px;
+        margin-bottom: 0;
+    }
+    .breadcrumbs {
+        padding-bottom: 20px;
+        text-align: right;
+        li {
+            display: inline-block;
+            &:after {
+                content: '/';
+                font-size: 17px;
+                color: #f6f6f6;
+                margin-left: 6px;
+            }
+            a {
+                font-size: 17px;
+                color: #808080;
+                text-decoration: underline;
+                @include transition (all, 0.4s, linear);
+                &:hover {
+                    color: #ffffff;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+    &-inner {
+        @include clearfix;
+        .image-holder {
+            float: left;
+            padding-left: 30px;
+            img {
+                max-width: 465px;
+            }
+        }
+        &-description {
+            width: 465px;
+            float: right;
+            padding-top: 80px;
+            p {
+                font-size: 16px;
+                margin-bottom: 25px;
+                line-height: 1.2;
+                a {
+                    font-weight: $medium;
+                    color: $yellow;
+                    text-decoration: underline;
+                    &:hover {
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+    }
+    .btn-holder {
+        text-align: right;
+        p {
+            display: inline-block;
+            font-size: 38px;
+            font-weight: $bold;
+            margin-right: 30px;
+        }
+        .btn {
+            margin-left: 10px;
+        }
+    }
+}
+.product-characteristic {
+    padding: 85px 0;
+    background: url(../img/characteristic_bg.jpg) no-repeat;
+    background-attachment: fixed;
+    @include background-size (cover);
+    &-inner {
+        @include clearfix;
+        padding: 20px 0 25px;
+    }
+    &-item {
+        float: left;
+        width: 20%;
+        text-align: center;
+        .image-holder {
+            height: 95px;
+            line-height: 95px;
+            img {
+                vertical-align: middle;
+            }
+        }
+        h5 {
+            font-size: 18px;
+            margin: 25px 0;
+        }
+        p {
+            line-height: 1.1;
+            font-size: 14px;
+            padding: 0 20px;
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -11,11 +11,25 @@
     <link rel="stylesheet" type="text/css" href="css/main.css" />
     <link rel="stylesheet" type="text/css" href="css/animate.css" />
 
-
     <!-- Scripts -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <script src="js/custom.js" type="text/javascript"></script>
     <script src="js/animate.js" type="text/javascript"></script>
+    <script src="js/wow.js" type="text/javascript"></script>
+    <script>
+        $(document).ready(function(){
+            wow = new WOW(
+              {
+                animateClass: 'animated',
+                offset:       100,
+                callback:     function(box) {
+                  console.log("WOW: animating <" + box.tagName.toLowerCase() + ">")
+                }
+              }
+            );
+            wow.init();
+        });
+    </script>
 
 </head>
 <body>
@@ -102,6 +116,74 @@
     </div>
 </div><!-- Menu end -->
 
+<div class="section product-info">
+    <div class="container">
+        <ul class="breadcrumbs">
+            <li><a href="#">Аксессуары</a></li>
+            <li><a href="#">Модификации для флайбордов</a></li>
+        </ul>
+        <h1 class="title-second title-right title-big">
+            <div class="title-second-inner">
+                <span class="title-second-inner-subtitle">вездеход</span>
+                <span class="title-second-inner-head">Dtv SHREDDER</span>
+                <span class="title-second-inner-subtitle-second">ultima extended 2.0</span>
+            </div>
+        </h1>
+        <div class="product-info-inner">
+            <div class="image-holder">
+                <img src="img/product/info_image.png" alt="">
+            </div>
+            <div class="product-info-inner-description">
+                <p>Инновационное средство передвижения DTV Shredder, разработанное компанией BPG Werks, способно передвигаться по любой поверхности в любую погоду со скоростью 40 км/ч. Мощность четырехтактного двигателя объемом 196 см³, составляет 14 л.с. Полного бака, объемом 3,8 литра, достаточно для 40 минут работы.</p>
+                <p>Бесшовные резиновые гусеницы от <a href="#">Caterpillar Inc</a>. обладают отличной проходимостью по грязи, песку, гравию, снегу и даже льду, а также отличаются повышенной износостойкостью.</p>
+            </div>
+        </div>
+        <div class="btn-holder">
+            <p>от 1 329 900 р</p>
+            <a href="#" class="btn btn-big btn-transparent"><img src="img/icons/basket_small.png" alt="">В КОРЗИНУ</a>
+            <a href="#" class="btn btn-big btn-yellow">БЫСТРЫЙ ЗАКАЗ</a>
+        </div>
+    </div>
+</div><!-- Product info end -->
+
+<div class="section product-characteristic">
+    <div class="container">
+        <h1 class="title-second title-left title-big">
+            <div class="title-second-inner">
+                <span class="title-second-inner-subtitle">технические</span>
+                <span class="title-second-inner-head">характеристики</span>
+            </div>
+        </h1>
+        <div class="product-characteristic-inner">
+            <div class="product-characteristic-item wow animated fadeInLeft">
+                <div class="image-holder"><img src="img/product/dimensions.png" alt=""></div>
+                <h5>ГАБАРИТЫ</h5>
+                <p>длина 76, ширина 56, высота 43 (в сложенном состоянии)</p>
+            </div>
+            <div class="product-characteristic-item wow animated fadeInLeft" data-wow-delay="700ms">
+                <div class="image-holder"><img src="img/product/weight.png" alt=""></div>
+                <h5>ВЕС</h5>
+                <p>112 кг</p>
+            </div>
+            <div class="product-characteristic-item wow animated fadeInLeft" data-wow-delay="1400ms">
+                <div class="image-holder"><img src="img/product/speed.png" alt=""></div>
+                <h5>СКОРОСТЬ</h5>
+                <p>до 50 км/ч (с заводскими ограничениями)</p>
+            </div>
+            <div class="product-characteristic-item wow animated fadeInLeft" data-wow-delay="2100ms">
+                <div class="image-holder"><img src="img/product/engine.png" alt=""></div>
+                <h5>ДВИЖОК</h5>
+                <p>196 см3, 4-тактный, 14 л.с., бензин 95</p>
+            </div>
+            <div class="product-characteristic-item wow animated fadeInLeft" data-wow-delay="2800ms">
+                <div class="image-holder"><img src="img/product/materials.png" alt=""></div>
+                <h5>МАТЕРИАЛЫ</h5>
+                <p>Алюминий, композитное армирование, резина</p>
+            </div>
+        </div>
+    </div>
+    <hr>
+</div><!-- Product characteristic end -->
 
 <div class="section goods best-goods">
     <div class="container goods-title">

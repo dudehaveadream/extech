@@ -178,6 +178,13 @@ hr {
   font-size: 30px;
   font-weight: 300;
 }
+.title-second-inner-subtitle-second {
+  position: absolute;
+  bottom: -28px;
+  right: -100px;
+  font-size: 30px;
+  font-weight: 300;
+}
 .title-second-inner-head {
   line-height: 1;
   font-size: 37px;
@@ -190,6 +197,10 @@ hr {
   font-size: 38px;
   top: -35px;
 }
+.title-big .title-second-inner-subtitle-second {
+  font-size: 38px;
+  bottom: -38px;
+}
 
 .title-left {
   text-align: left;
@@ -201,6 +212,7 @@ hr {
 }
 
 .btn {
+  text-align: center;
   display: inline-block;
   height: 36px;
   width: 108px;
@@ -213,6 +225,13 @@ hr {
   transition: all 0.4s linear;
 }
 
+.btn.btn-big {
+  height: 55px;
+  width: 165px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
 .btn-yellow {
   background: #ffe400;
   color: #000000;
@@ -221,6 +240,10 @@ hr {
 .btn-yellow:hover {
   background: #232323;
   color: #ffe400;
+}
+
+.btn-yellow.btn-big {
+  padding: 21px 10px;
 }
 
 .btn-transparent {
@@ -237,6 +260,20 @@ hr {
 .btn-transparent:hover {
   background: #232323;
   color: #ffe400;
+  border-color: transparent;
+}
+
+.btn-transparent.btn-big {
+  border: 7px solid #ffe400;
+  padding-top: 14px;
+}
+.btn-transparent.btn-big img {
+  margin-left: 15px;
+  margin-top: -4px;
+  width: 21px;
+  height: 21px;
+}
+.btn-transparent.btn-big:hover {
   border-color: transparent;
 }
 
@@ -405,7 +442,6 @@ hr {
   position: relative;
   min-width: 960px;
   min-height: 580px;
-  max-height: 740px;
 }
 
 .rslides {
@@ -975,28 +1011,6 @@ nav ul > li ul li a:hover {
   display: table;
   clear: both;
 }
-.category-item .item-description .btn-holder .btn {
-  height: 55px;
-  width: 165px;
-  font-size: 14px;
-  font-weight: 600;
-}
-.category-item .item-description .btn-holder .btn-yellow {
-  padding: 21px 10px;
-}
-.category-item .item-description .btn-holder .btn-transparent {
-  border: 7px solid #ffe400;
-  padding-top: 14px;
-}
-.category-item .item-description .btn-holder .btn-transparent img {
-  margin-left: 15px;
-  margin-top: -4px;
-  width: 21px;
-  height: 21px;
-}
-.category-item .item-description .btn-holder .btn-transparent:hover {
-  border-color: transparent;
-}
 .category-item .item-image {
   position: absolute;
   top: 0;
@@ -1176,4 +1190,120 @@ nav ul > li ul li a:hover {
 .image-text-info .right img {
   height: 315px;
   width: 430px;
+}
+
+.product-info {
+  padding: 30px 0 60px;
+}
+.product-info .title-second {
+  padding-right: 100px;
+  margin-bottom: 0;
+}
+.product-info .breadcrumbs {
+  padding-bottom: 20px;
+  text-align: right;
+}
+.product-info .breadcrumbs li {
+  display: inline-block;
+}
+.product-info .breadcrumbs li:after {
+  content: '/';
+  font-size: 17px;
+  color: #f6f6f6;
+  margin-left: 6px;
+}
+.product-info .breadcrumbs li a {
+  font-size: 17px;
+  color: #808080;
+  text-decoration: underline;
+  -webkit-transition: all 0.4s linear;
+  -moz-transition: all 0.4s linear;
+  -ms-transition: all 0.4s linear;
+  -o-transition: all 0.4s linear;
+  transition: all 0.4s linear;
+}
+.product-info .breadcrumbs li a:hover {
+  color: #ffffff;
+  text-decoration: none;
+}
+.product-info-inner:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.product-info-inner .image-holder {
+  float: left;
+  padding-left: 30px;
+}
+.product-info-inner .image-holder img {
+  max-width: 465px;
+}
+.product-info-inner-description {
+  width: 465px;
+  float: right;
+  padding-top: 80px;
+}
+.product-info-inner-description p {
+  font-size: 16px;
+  margin-bottom: 25px;
+  line-height: 1.2;
+}
+.product-info-inner-description p a {
+  font-weight: 500;
+  color: #ffe400;
+  text-decoration: underline;
+}
+.product-info-inner-description p a:hover {
+  text-decoration: none;
+}
+.product-info .btn-holder {
+  text-align: right;
+}
+.product-info .btn-holder p {
+  display: inline-block;
+  font-size: 38px;
+  font-weight: 600;
+  margin-right: 30px;
+}
+.product-info .btn-holder .btn {
+  margin-left: 10px;
+}
+
+.product-characteristic {
+  padding: 85px 0;
+  background: url(../img/characteristic_bg.jpg) no-repeat;
+  background-attachment: fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -ms-background-size: cover;
+  background-size: cover;
+}
+.product-characteristic-inner {
+  padding: 20px 0 25px;
+}
+.product-characteristic-inner:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.product-characteristic-item {
+  float: left;
+  width: 20%;
+  text-align: center;
+}
+.product-characteristic-item .image-holder {
+  height: 95px;
+  line-height: 95px;
+}
+.product-characteristic-item .image-holder img {
+  vertical-align: middle;
+}
+.product-characteristic-item h5 {
+  font-size: 18px;
+  margin: 25px 0;
+}
+.product-characteristic-item p {
+  line-height: 1.1;
+  font-size: 14px;
+  padding: 0 20px;
 }
