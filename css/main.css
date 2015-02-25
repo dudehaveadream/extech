@@ -1307,3 +1307,69 @@ nav ul > li ul li a:hover {
   font-size: 14px;
   padding: 0 20px;
 }
+
+.product-order {
+  padding: 95px 0 60px;
+  background: #2f2f2f;
+}
+.product-order h1 {
+  text-align: right;
+  margin-bottom: -20px;
+  padding-right: 60px;
+}
+.product-order h1 .inner {
+  display: inline-block;
+  position: relative;
+  z-index: 50;
+}
+.product-order h1 .inner .head {
+  font-size: 48px;
+  background: #2f2f2f;
+  padding: 0 20px;
+}
+.product-order h1 .inner .subtitle {
+  font-size: 38px;
+  font-weight: 300;
+  position: absolute;
+  top: -35px;
+  left: -170px;
+}
+.product-order-inner {
+  border: 1px solid #ffe400;
+  position: relative;
+  min-height: 285px;
+  padding-bottom: 25px;
+}
+.product-order-inner img.item {
+  position: absolute;
+  top: -90px;
+  left: 0;
+}
+.product-order-inner .description {
+  padding-right: 75px;
+  padding-top: 90px;
+  padding-bottom: 50px;
+}
+.product-order-inner .description:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.product-order-inner .description p {
+  width: 385px;
+  float: right;
+  font-size: 17px;
+  line-height: 1.2;
+}
+.product-order-inner .btn-holder {
+  text-align: right;
+  padding-right: 20px;
+}
+.product-order-inner .btn-holder p {
+  display: inline-block;
+  font-size: 38px;
+  font-weight: 600;
+}
+.product-order-inner .btn-holder .btn {
+  margin-left: 10px;
+}
