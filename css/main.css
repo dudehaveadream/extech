@@ -1430,6 +1430,89 @@ nav ul > li ul li a:hover {
 .product-model .btn-holder .btn {
   margin-left: 10px;
 }
+.product-model .section {
+  width: 465px;
+  padding-top: 35px;
+  padding-left: 90px;
+}
+.product-model .section h2 {
+  font-weight: 300;
+  z-index: 10;
+  position: relative;
+  margin-bottom: 35px;
+  line-height: 1.1;
+}
+.product-model .section p {
+  z-index: 10;
+  position: relative;
+  font-size: 17px;
+  line-height: 1.2;
+  margin-bottom: 35px;
+}
+.product-model .section h5 {
+  z-index: 10;
+  position: relative;
+  font-size: 19px;
+  margin-bottom: 10px;
+}
+.product-model .tabs {
+  height: 42px;
+  list-style: none;
+  padding: 9px 10px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  border-radius: 20px;
+  background: rgba(0, 0, 0, 0.5);
+  display: inline-block;
+}
+.product-model .tabs li {
+  float: left;
+  display: inline;
+  height: 24px;
+  width: 24px;
+  cursor: pointer;
+  position: relative;
+  margin: 0 5px;
+  border: 4px solid;
+  opacity: 0.5;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  border-radius: 50%;
+  -webkit-transition: all 0.4s linear;
+  -moz-transition: all 0.4s linear;
+  -ms-transition: all 0.4s linear;
+  -o-transition: all 0.4s linear;
+  transition: all 0.4s linear;
+}
+.product-model .tabs li.red {
+  border-color: #ff0000;
+}
+.product-model .tabs li.yellow {
+  border-color: #ffe400;
+}
+.product-model .tabs li.blue {
+  border-color: #00aeef;
+}
+.product-model .tabs li:hover {
+  opacity: 1;
+}
+.product-model .tabs li.current {
+  opacity: 1;
+}
+.product-model .box {
+  display: none;
+  position: absolute;
+  top: 0;
+  right: 50px;
+  width: 525px;
+  text-align: center;
+  z-index: 5;
+}
+.product-model .box.visible {
+  display: block;
+}
 
 .product-modifications {
   background: url(../img/modifications_bg.jpg) no-repeat;
