@@ -1,0 +1,134 @@
+/**
+ *  sliderkit-core.css
+ *	> Core CSS styles
+ *
+ *  This file is part of Slider Kit jQuery plugin.
+ *  http://www.kyrielles.net/sliderkit/
+ *
+ *  Copyright (c) 2010-2012 Alan Frog
+ *  Licensed under the GNU General Public License
+ *  See <license.txt> or <http://www.gnu.org/licenses/>
+ *
+ */
+
+/*
+ *  PLUGIN BASICS
+ *  ------------------------------------------------
+ */
+.sliderkit{display:none;position:relative;overflow:hidden;text-align:left;}
+.sliderkit a,
+.sliderkit a:hover{text-decoration:none;}
+.sliderkit a:focus{outline:1px dotted #000;/*optional*/}
+.sliderkit img{border:0;}
+
+/*---------------------------------
+ *  Navigation
+ *---------------------------------*/
+.sliderkit .sliderkit-nav{z-index:10;position:absolute;text-align:center;}
+
+/* Nav > Clip */
+.sliderkit .sliderkit-nav-clip{position:relative;overflow:hidden;margin:0 auto;}
+.sliderkit .sliderkit-nav-clip ul{position:relative;left:0;top:0;list-style:none;margin:0;padding:0;}
+.sliderkit .sliderkit-nav-clip ul li{float:left;}
+.sliderkit .sliderkit-nav-clip ul li a{display:block;overflow:hidden;}
+
+/*---------------------------------
+ *  Buttons
+ *---------------------------------*/
+.sliderkit .sliderkit-btn{z-index:10;}
+
+/*---------------------------------
+ *  Panels
+ *---------------------------------*/
+.sliderkit .sliderkit-panel{z-index:1;position:absolute;overflow:hidden; background: #232323;}
+.sliderkit .sliderkit-panel-active{z-index:5;}
+.sliderkit .sliderkit-panel-old{z-index:4;}
+
+/* Panels > Overlay */
+.sliderkit .sliderkit-panel .sliderkit-panel-textbox{position:absolute;z-index:1;}
+.sliderkit .sliderkit-panel .sliderkit-panel-text{position:absolute;z-index:3;top:0;left:0;}
+.sliderkit .sliderkit-panel .sliderkit-panel-overlay{position:absolute;z-index:2;top:0;left:0;}
+
+/*---------------------------------
+ *  Counter
+ *---------------------------------*/
+.sliderkit .sliderkit-count{position:absolute;top:5px;right:5px;z-index:10;padding:5px;color:#fff;background:#000;}
+
+/*---------------------------------
+ *  Loader
+ *---------------------------------*/
+.sliderkit .sliderkit-timer{position:absolute;top:0;left:0;z-index:10;height:3px;background:#ccc;}
+
+/*---------------------------------
+ *  Photos gallery > Standard
+ *---------------------------------*/
+.photosgallery-std{width:960px;height:335px;padding:0 0 76px;}
+
+/* Navbar */
+.photosgallery-std .sliderkit-nav{left:0;bottom:0;width:960px;padding:10px;}
+.photosgallery-std .sliderkit-nav-clip ul li{float:left;margin:0 20px 0 0;}
+.photosgallery-std .sliderkit-nav-clip ul li a{display:block;overflow:hidden;margin:0; width: 190px; height: 125px; background: black; line-height: 125px; border: 1px solid #000000; -webkit-transition: all 0.4s linear; -moz-transition: all 0.4s linear; -ms-transition: all 0.4s linear; -o-transition: all 0.4s linear; transition: all 0.4s linear;}
+.photosgallery-std .sliderkit-nav-clip ul li a img {vertical-align: middle; opacity: .4; -webkit-transition: all 0.4s linear; -moz-transition: all 0.4s linear; -ms-transition: all 0.4s linear; -o-transition: all 0.4s linear; transition: all 0.4s linear;}
+.photosgallery-std .sliderkit-nav-clip ul li.sliderkit-selected a{padding:0;border-color: #ffe400;}
+.photosgallery-std .sliderkit-nav-clip ul li.sliderkit-selected a img {opacity: 1;}
+
+/* Buttons */
+.photosgallery-std .sliderkit-btn{position:absolute;top:0;}
+.photosgallery-std .sliderkit-btn span{display:none;}
+.photosgallery-std .sliderkit-btn-disable{opacity:0/*can be set to any value until 1*/;cursor:default;}
+
+/* Navbar buttons */
+.photosgallery-std .sliderkit-nav .sliderkit-btn a{display:block;width:15px;height:76px;background:transparent url("../img/arrows-h.png") no-repeat center 0;}
+.photosgallery-std .sliderkit-nav .sliderkit-nav-prev{left:20px;}
+.photosgallery-std .sliderkit-nav .sliderkit-nav-next{right:20px;}
+.photosgallery-std .sliderkit-nav .sliderkit-nav-prev a{background-position:-89px center;}
+.photosgallery-std .sliderkit-nav .sliderkit-nav-next a{background-position:-108px center;}
+.photosgallery-std .sliderkit-nav .sliderkit-nav-prev a:hover,
+.photosgallery-std .sliderkit-nav .sliderkit-nav-prev a:focus{background-position:-126px center;}
+.photosgallery-std .sliderkit-nav .sliderkit-nav-next a:hover,
+.photosgallery-std .sliderkit-nav .sliderkit-nav-next a:focus{background-position:-145px center;}
+
+/* Panels buttons */
+.photosgallery-std .sliderkit-go-btn{position:absolute;bottom:20px;z-index:10;width:19px;height:107px;}
+.photosgallery-std .sliderkit-go-prev{left:20px;}
+.photosgallery-std .sliderkit-go-next{right:20px;}
+.photosgallery-std .sliderkit-go-btn a{display:block;width:19px;height:107px;opacity:0.6;cursor:pointer;background: url(../img/product/model_nav_arrows.png) no-repeat;}
+.photosgallery-std .sliderkit-go-next a{background-position: right top;}
+.photosgallery-std .sliderkit-btn-disable a{opacity:0/*can be set to any value until 1*/;cursor:default;}
+.photosgallery-std .sliderkit-go-btn span{display:none;}
+
+/* Panel */
+.photosgallery-std .sliderkit-panel{top:0;left:0;width:100%;height:335px;}
+
+/*---------------------------------
+ *  Photos gallery > With captions
+ *---------------------------------*/
+
+
+
+
+/* This code can be reduced and pasted in any other CSS file :
+
+Here is a compact version :
+-------------------------------
+
+.sliderkit{display:none;position:relative;overflow:hidden;text-align:left;}
+.sliderkit a,
+.sliderkit a:hover{text-decoration:none;}
+.sliderkit a:focus{outline:1px dotted #000;}
+.sliderkit img{border:0;}
+.sliderkit .sliderkit-nav{z-index:10;position:absolute;text-align:center;}
+.sliderkit .sliderkit-nav-clip{position:relative;overflow:hidden;margin:0 auto;}
+.sliderkit .sliderkit-nav-clip ul{position:relative;left:0;top:0;list-style:none;margin:0;padding:0;}
+.sliderkit .sliderkit-nav-clip ul li{float:left;}
+.sliderkit .sliderkit-nav-clip ul li a{display:block;overflow:hidden;}
+.sliderkit .sliderkit-btn{z-index:10;}
+.sliderkit .sliderkit-panel{z-index:1;position:absolute;overflow:hidden;}
+.sliderkit .sliderkit-panel-active{z-index:5;}
+.sliderkit .sliderkit-panel-old{z-index:4;}
+.sliderkit .sliderkit-panel .sliderkit-panel-textbox{position:absolute;z-index:1;}
+.sliderkit .sliderkit-panel .sliderkit-panel-text{position:absolute;z-index:3;top:0;left:0;}
+.sliderkit .sliderkit-panel .sliderkit-panel-overlay{position:absolute;z-index:2;top:0;left:0;}
+.sliderkit .sliderkit-count{position:absolute;top:5px;right:5px;z-index:10;padding:5px;color:#fff;background:#000;}
+.sliderkit .sliderkit-timer{position:absolute;top:0;left:0;z-index:10;height:3px;background:#ccc;}
+*/
