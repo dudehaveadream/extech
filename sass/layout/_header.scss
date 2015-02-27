@@ -2,9 +2,15 @@
     background: $yellow;
     padding: 5px 0 15px;
     text-align: center;
-    @include clearfix;
+    .container {
+        @include clearfix;
+        position: relative;
+    }
     &-logo {
-        display: inline-block;
+        position: absolute;
+        top: 3px;
+        left: 50%;
+        margin-left: -56px;
     }
     &-title {
         float: left;

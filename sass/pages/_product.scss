@@ -1,7 +1,7 @@
 
 .product-name {
     min-width: $min-slider-width;
-    min-height: 750px;
+    min-height: 690px;
     max-height: $max-slider-height;
     position: relative;
     &:after {
@@ -20,12 +20,12 @@
         left: 0;
         top: 0;
         min-width: $min-slider-width;
-        min-height: 750px;
+        min-height: 690px;
         max-height: $max-slider-height;
     }
     .container {
         position: relative;
-        min-height: 750px;
+        min-height: 690px;
         padding-top: 35px;
         .title-main {
             span {

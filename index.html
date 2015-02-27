@@ -27,6 +27,16 @@
             speed: 500,
             namespace: "centered-btns"
           });
+            wow = new WOW(
+              {
+                animateClass: 'animated',
+                offset:       100,
+                callback:     function(box) {
+                  console.log("WOW: animating <" + box.tagName.toLowerCase() + ">")
+                }
+              }
+            );
+            wow.init();
         });
     </script>
 </head>
@@ -35,7 +45,7 @@
 <div class="section header">
     <div class="container">
         <div class="header-title"><p>магазин <br> экстрЕмальной техники</p></div>
-        <div class="header-logo"><a href="#"><img src="img/icons/logo_black.png" alt=""></a></div>
+        <div class="header-logo wow animated bounceIn" data-wow-delay="200ms"><a href="#"><img src="img/icons/logo_black.png" alt=""></a></div>
         <div class="header-info">
             <p>+7 (800) 500-50-50</p>
             <a href="#">info@extech.pro</a>
@@ -107,7 +117,7 @@
                     <p>1 289 000  р</p>
                     <a href="#">Открыть корзину</a>
                 </div>
-                <div class="basket-inner-count"><p>5</p></div>
+                <a href="#" class="basket-inner-count"><p>5</p></a>
             </div>
             <a href="#" class="basket-order">ОФОРМИТЬ<br>ЗАКАЗ</a>
         </div>
@@ -128,7 +138,7 @@
             </div>
         </li>
         <li>
-            <img src="img/slider/shredder.jpg" alt="">
+            <img src="img/slider/yamaha.jpg" alt="">
             <div class="caption">
                 <div class="container">
                     <h1 class="title-main">
@@ -146,7 +156,7 @@
             </div>
         </li>
         <li>
-            <img src="img/slider/shredder.jpg" alt="">
+            <img src="img/slider/seabob.jpg" alt="">
             <div class="caption">
                 <div class="container">
                     <h1 class="title-main">
@@ -171,7 +181,7 @@
     </div>
 </div><!-- Slider end -->
 
-<div class="section categories">
+<!--<div class="section categories">
     <div class="container">
         <h1 class="title-second">
             <div class="title-second-inner">
@@ -214,14 +224,124 @@
             </div>
         </div>
     </div>
-</div><!-- Categories end -->
+</div> Categories end -->
 
-<div class="section goods new-goods">
+<div class="section goods">
     <div class="container goods-title">
-        <h1 class="title-second">
+        <h1 class="title-second title-right">
             <div class="title-second-inner">
-                <span class="title-second-inner-subtitle">у нас есть кое-что</span>
-                <span class="title-second-inner-head">новенькое</span>
+                <span class="title-second-inner-subtitle">техника</span>
+                <span class="title-second-inner-head">для земли</span>
+            </div>
+        </h1>
+    </div>
+    <div class="goods-inner">
+        <div class="container">
+            <div class="goods-inner-item">
+                <img src="img/goods/seabob.jpg" alt="" class="item">
+                <div class="goods-inner-item-info">
+                    <h4>DTV sHREDDER</h4>
+                    <p>от 1 299 300 р</p>
+                    <div class="btn-holder">
+                        <a href="#" class="btn btn-yellow">БЫСТРЫЙ ЗАКАЗ</a>
+                        <a href="#" class="btn btn-transparent"><img src="img/icons/basket_small.png" alt="">В КОРЗИНУ</a>
+                    </div>
+                </div>
+                <div class="pouring"></div>
+            </div>
+            <div class="goods-inner-item">
+                <img src="img/goods/yamaha.jpg" alt="" class="item">
+                <div class="goods-inner-item-info">
+                    <h4>SEGWAY</h4>
+                    <p>от 150 300 р</p>
+                    <div class="btn-holder">
+                        <a href="#" class="btn btn-yellow">БЫСТРЫЙ ЗАКАЗ</a>
+                        <a href="#" class="btn btn-transparent"><img src="img/icons/basket_small.png" alt="">В КОРЗИНУ</a>
+                    </div>
+                </div>
+                <div class="pouring"></div>
+            </div>
+            <div class="goods-inner-item">
+                <img src="img/goods/flyboard.jpg" alt="" class="item">
+                <div class="goods-inner-item-info">
+                    <h4>FLYBOARD</h4>
+                    <p>от 150 300 р</p>
+                    <div class="btn-holder">
+                        <a href="#" class="btn btn-yellow">БЫСТРЫЙ ЗАКАЗ</a>
+                        <a href="#" class="btn btn-transparent"><img src="img/icons/basket_small.png" alt="">В КОРЗИНУ</a>
+                    </div>
+                </div>
+                <div class="pouring"></div>
+            </div>
+            <div class="goods-inner-item">
+                <img src="img/goods/sw.jpg" alt="" class="item">
+                <div class="goods-inner-item-info">
+                    <h4>ИМПЕРСКИЙ КРЕЙСЕР</h4>
+                    <p>от  29 900 300 р</p>
+                    <div class="btn-holder">
+                        <a href="#" class="btn btn-yellow">БЫСТРЫЙ ЗАКАЗ</a>
+                        <a href="#" class="btn btn-transparent"><img src="img/icons/basket_small.png" alt="">В КОРЗИНУ</a>
+                    </div>
+                </div>
+                <div class="pouring"></div>
+            </div>
+            <div class="goods-inner-item">
+                <img src="img/goods/seabob.jpg" alt="" class="item">
+                <div class="goods-inner-item-info">
+                    <h4>DTV sHREDDER</h4>
+                    <p>от 1 299 300 р</p>
+                    <div class="btn-holder">
+                        <a href="#" class="btn btn-yellow">БЫСТРЫЙ ЗАКАЗ</a>
+                        <a href="#" class="btn btn-transparent"><img src="img/icons/basket_small.png" alt="">В КОРЗИНУ</a>
+                    </div>
+                </div>
+                <div class="pouring"></div>
+            </div>
+            <div class="goods-inner-item">
+                <img src="img/goods/yamaha.jpg" alt="" class="item">
+                <div class="goods-inner-item-info">
+                    <h4>SEGWAY</h4>
+                    <p>от 150 300 р</p>
+                    <div class="btn-holder">
+                        <a href="#" class="btn btn-yellow">БЫСТРЫЙ ЗАКАЗ</a>
+                        <a href="#" class="btn btn-transparent"><img src="img/icons/basket_small.png" alt="">В КОРЗИНУ</a>
+                    </div>
+                </div>
+                <div class="pouring"></div>
+            </div>
+            <div class="goods-inner-item">
+                <img src="img/goods/flyboard.jpg" alt="" class="item">
+                <div class="goods-inner-item-info">
+                    <h4>FLYBOARD</h4>
+                    <p>от 150 300 р</p>
+                    <div class="btn-holder">
+                        <a href="#" class="btn btn-yellow">БЫСТРЫЙ ЗАКАЗ</a>
+                        <a href="#" class="btn btn-transparent"><img src="img/icons/basket_small.png" alt="">В КОРЗИНУ</a>
+                    </div>
+                </div>
+                <div class="pouring"></div>
+            </div>
+            <div class="goods-inner-item expected">
+                <img src="img/goods/sw.jpg" alt="" class="item">
+                <p class="extend">ожидается поступление</p>
+                <div class="goods-inner-item-info">
+                    <h4>ИМПЕРСКИЙ КРЕЙСЕР</h4>
+                    <div class="btn-holder">
+                        <a href="#">подробнее в блоге</a>
+                    </div>
+                </div>
+                <div class="pouring"></div>
+            </div>
+        </div>
+    </div>
+</div><!-- Goods end -->
+
+<div class="section goods best-goods">
+    <div class="container goods-title">
+        <h1 class="title-second title-left">
+            <div class="title-second-inner">
+                <span class="title-second-inner-subtitle">техника</span>
+                <span class="title-second-inner-head">для воды</span>
             </div>
         </h1>
     </div>
@@ -275,16 +395,52 @@
                 </div>
                 <div class="pouring"></div>
             </div>
+            <div class="goods-inner-item">
+                <img src="img/goods/shredder.jpg" alt="" class="item">
+                <div class="goods-inner-item-info">
+                    <h4>DTV sHREDDER</h4>
+                    <p>от 1 299 300 р</p>
+                    <div class="btn-holder">
+                        <a href="#" class="btn btn-yellow">БЫСТРЫЙ ЗАКАЗ</a>
+                        <a href="#" class="btn btn-transparent"><img src="img/icons/basket_small.png" alt="">В КОРЗИНУ</a>
+                    </div>
+                </div>
+                <div class="pouring"></div>
+            </div>
+            <div class="goods-inner-item">
+                <img src="img/goods/segway.jpg" alt="" class="item">
+                <div class="goods-inner-item-info">
+                    <h4>SEGWAY</h4>
+                    <p>от 150 300 р</p>
+                    <div class="btn-holder">
+                        <a href="#" class="btn btn-yellow">БЫСТРЫЙ ЗАКАЗ</a>
+                        <a href="#" class="btn btn-transparent"><img src="img/icons/basket_small.png" alt="">В КОРЗИНУ</a>
+                    </div>
+                </div>
+                <div class="pouring"></div>
+            </div>
+            <div class="goods-inner-item">
+                <img src="img/goods/flyboard.jpg" alt="" class="item">
+                <div class="goods-inner-item-info">
+                    <h4>FLYBOARD</h4>
+                    <p>от 150 300 р</p>
+                    <div class="btn-holder">
+                        <a href="#" class="btn btn-yellow">БЫСТРЫЙ ЗАКАЗ</a>
+                        <a href="#" class="btn btn-transparent"><img src="img/icons/basket_small.png" alt="">В КОРЗИНУ</a>
+                    </div>
+                </div>
+                <div class="pouring"></div>
+            </div>
         </div>
     </div>
-</div><!-- New goods end -->
+</div><!-- Goods end -->
 
 <div class="section goods best-goods">
     <div class="container goods-title">
         <h1 class="title-second">
             <div class="title-second-inner">
-                <span class="title-second-inner-subtitle">по-настоящему</span>
-                <span class="title-second-inner-head">хитовая техника</span>
+                <span class="title-second-inner-subtitle">техника</span>
+                <span class="title-second-inner-head">для снега</span>
             </div>
         </h1>
     </div>
@@ -338,9 +494,33 @@
                 </div>
                 <div class="pouring"></div>
             </div>
+            <div class="goods-inner-item">
+                <img src="img/goods/shredder.jpg" alt="" class="item">
+                <div class="goods-inner-item-info">
+                    <h4>DTV sHREDDER</h4>
+                    <p>от 1 299 300 р</p>
+                    <div class="btn-holder">
+                        <a href="#" class="btn btn-yellow">БЫСТРЫЙ ЗАКАЗ</a>
+                        <a href="#" class="btn btn-transparent"><img src="img/icons/basket_small.png" alt="">В КОРЗИНУ</a>
+                    </div>
+                </div>
+                <div class="pouring"></div>
+            </div>
+            <div class="goods-inner-item">
+                <img src="img/goods/segway.jpg" alt="" class="item">
+                <div class="goods-inner-item-info">
+                    <h4>SEGWAY</h4>
+                    <p>от 150 300 р</p>
+                    <div class="btn-holder">
+                        <a href="#" class="btn btn-yellow">БЫСТРЫЙ ЗАКАЗ</a>
+                        <a href="#" class="btn btn-transparent"><img src="img/icons/basket_small.png" alt="">В КОРЗИНУ</a>
+                    </div>
+                </div>
+                <div class="pouring"></div>
+            </div>
         </div>
     </div>
-</div><!-- Best goods end -->
+</div><!-- Goods end -->
 
 <div class="section footer">
     <div class="container">
