@@ -825,9 +825,6 @@ nav ul > li ul li a:hover {
   top: -35px;
 }
 .goods-inner {
-  -webkit-box-shadow: 0 2px 15px rgba(0, 0, 0, 0.5), 0 -2px 15px rgba(0, 0, 0, 0.5);
-  -moz-box-shadow: 0 2px 15px rgba(0, 0, 0, 0.5), 0 -2px 15px rgba(0, 0, 0, 0.5);
-  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.5), 0 -2px 15px rgba(0, 0, 0, 0.5);
   margin-bottom: 15px;
 }
 .goods-inner:after {
