@@ -18,6 +18,7 @@
     <script src="js/animate.js" type="text/javascript"></script>
     <script src="js/wow.js" type="text/javascript"></script>
     <script src="js/sliderkit.js" type="text/javascript"></script>
+    <script src="js/video.js" type="text/javascript"></script>
     <script>
         $(document).ready(function(){
             wow = new WOW(
@@ -32,12 +33,21 @@
             wow.init();
             $(".photosgallery-std").sliderkit({
                 shownavitems:4,
-                auto: false
+                auto: false,
+                circular: true
                 //navfx:"none",
             });
             $('ul.tabs').on('click', 'li:not(.current)', function() {
                 $(this).addClass('current').siblings().removeClass('current')
                     .parents('div.section').find('div.box').eq($(this).index()).fadeIn(150).siblings('div.box').hide();
+            });
+            $('.product-video').videoBG({
+                mp4:'video/Masquerade.mp4',
+                ogv:'video/Masquerade.ogv',
+                webm:'video/Masquerade.webm',
+                poster:'video/Masquerade.jpg',
+                scale:true,
+                zIndex:0
             });
         });
     </script>
@@ -136,7 +146,7 @@
         <img src="img/product/diver.png" alt="" class="product wow animated fadeIn" data-wow-delay="1600ms">
         <div class="product-name-order wow animated fadeIn" data-wow-delay="2400ms">
             <p>от 1 299 900 р</p>
-            <a href="#" class="btn btn-yellow">БЫСТРЫЙ ЗАКАЗ</a>
+            <a href="#" class="btn btn-big btn-yellow">БЫСТРЫЙ ЗАКАЗ</a>
         </div>
     </div>
 </div><!-- Product name end -->
@@ -164,9 +174,9 @@
             </div>
         </div>
         <div class="btn-holder">
-            <p>от 1 329 900 р</p>
-            <a href="#" class="btn btn-big btn-transparent"><img src="img/icons/basket_small.png" alt="">В КОРЗИНУ</a>
             <a href="#" class="btn btn-big btn-yellow">БЫСТРЫЙ ЗАКАЗ</a>
+            <a href="#" class="btn btn-big btn-transparent"><img src="img/icons/basket_small.png" alt="">В КОРЗИНУ</a>
+            <p>от 1 329 900 р</p>
         </div>
     </div>
 </div><!-- Product info end -->
@@ -185,22 +195,22 @@
                 <h5>ГАБАРИТЫ</h5>
                 <p>длина 76, ширина 56, высота 43 (в сложенном состоянии)</p>
             </div>
-            <div class="product-characteristic-item wow animated fadeInLeft" data-wow-delay="700ms">
+            <div class="product-characteristic-item wow animated fadeInLeft" data-wow-delay="500ms">
                 <div class="image-holder"><img src="img/product/weight.png" alt=""></div>
                 <h5>ВЕС</h5>
                 <p>112 кг</p>
             </div>
-            <div class="product-characteristic-item wow animated fadeInLeft" data-wow-delay="1400ms">
+            <div class="product-characteristic-item wow animated fadeInLeft" data-wow-delay="1000ms">
                 <div class="image-holder"><img src="img/product/speed.png" alt=""></div>
                 <h5>СКОРОСТЬ</h5>
                 <p>до 50 км/ч (с заводскими ограничениями)</p>
             </div>
-            <div class="product-characteristic-item wow animated fadeInLeft" data-wow-delay="2100ms">
+            <div class="product-characteristic-item wow animated fadeInLeft" data-wow-delay="1500ms">
                 <div class="image-holder"><img src="img/product/engine.png" alt=""></div>
                 <h5>ДВИЖОК</h5>
                 <p>196 см3, 4-тактный, 14 л.с., бензин 95</p>
             </div>
-            <div class="product-characteristic-item wow animated fadeInLeft" data-wow-delay="2800ms">
+            <div class="product-characteristic-item wow animated fadeInLeft" data-wow-delay="2000ms">
                 <div class="image-holder"><img src="img/product/materials.png" alt=""></div>
                 <h5>МАТЕРИАЛЫ</h5>
                 <p>Алюминий, композитное армирование, резина</p>
@@ -354,7 +364,7 @@
             </div>
         </h1>
         <div class="product-modifications-inner">
-            <div class="product-modifications-item product-modifications-left">
+            <div class="product-modifications-item product-modifications-left wow animated fadeInUp" data-wow-offset="400" data-wow-delay="200ms">
                 <div class="image-holder"><img src="img/product/modifications.png" alt=""></div>
                 <div class="description">
                     <h3>ускоритель<span>элементрных частиц</span></h3>
@@ -366,7 +376,7 @@
                     </div>
                 </div>
             </div>
-            <div class="product-modifications-item product-modifications-right">
+            <div class="product-modifications-item product-modifications-right wow animated fadeInUp" data-wow-offset="400" data-wow-delay="200ms">
                 <div class="image-holder"><img src="img/product/modifications.png" alt=""></div>
                 <div class="description">
                     <h3>ускоритель<span>элементрных частиц</span></h3>

@@ -14,7 +14,6 @@ $(function(){
 
         // animation element & effect
         var miniLogo = $('.nav-logo img');
-        var animateClass = "animated fadeIn";
 
         if ($(window).scrollTop() >= (orgElementTop)) {
             // scrolled past the original position; now only show the cloned, sticky element.
@@ -22,7 +21,7 @@ $(function(){
             // push menu for from left
             $('nav').css("margin-left", "110px").addClass("animated fadeInLeft");
             // animate logo
-            miniLogo.css("visibility", "visible").addClass(animateClass);
+            miniLogo.css("visibility", "visible").addClass("animated bounceIn");
 
             // Cloned element should always have same left position and width as original element.
             orgElement = $('.original');
@@ -34,11 +33,12 @@ $(function(){
         } else {
             // not scrolled past the menu; only show the original menu.
             miniLogo.css('visibility','hidden');
-            miniLogo.removeClass(animateClass);
+            miniLogo.removeClass("animated bounceIn");
             $('nav').css("margin-left", "0").removeClass("animated fadeInLeft");
             $('.cloned').hide();
             $('.original').css('visibility','visible');
         }
+
     }
 
 });

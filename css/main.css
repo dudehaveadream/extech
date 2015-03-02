@@ -264,7 +264,7 @@ hr {
 }
 
 .btn-transparent.btn-big {
-  border: 7px solid #ffe400;
+  border: 6px solid #ffe400;
   padding-top: 14px;
 }
 .btn-transparent.btn-big img {
@@ -567,6 +567,8 @@ hr {
   margin-right: 25px;
   display: inline-block;
   text-shadow: 0 2px 0 #985938;
+  vertical-align: middle;
+  margin-top: -5px;
   font-size: 46px;
   font-weight: 600;
 }
@@ -708,7 +710,7 @@ hr {
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
   border-radius: 50%;
-  padding: 3px 2px;
+  padding: 3px 3px 3px 2px;
   font-size: 17px;
   font-weight: bold;
 }
@@ -758,7 +760,7 @@ nav ul > li a {
   display: block;
   color: #fefefe;
   text-transform: uppercase;
-  padding: 15px 10px 27px;
+  padding: 15px 10px 26px;
   font-size: 16px;
   font-weight: bold;
   border: 1px solid transparent;
@@ -782,7 +784,7 @@ nav ul > li:hover ul li {
 nav ul > li ul {
   padding-bottom: 5px;
   position: absolute;
-  top: 58px;
+  top: 57px;
   z-index: 5;
   visibility: hidden;
   opacity: 0;
@@ -880,11 +882,11 @@ nav ul > li ul li a:hover {
   height: 100%;
   background: rgba(0, 0, 0, 0.7);
   z-index: 5;
-  -webkit-transition: all 0.4s linear;
-  -moz-transition: all 0.4s linear;
-  -ms-transition: all 0.4s linear;
-  -o-transition: all 0.4s linear;
-  transition: all 0.4s linear;
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear;
+  -ms-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+  transition: all 0.3s linear;
 }
 .goods-inner-item-info h4 {
   z-index: 20;
@@ -1260,8 +1262,8 @@ nav ul > li ul li a:hover {
 
 .product-name {
   min-width: 960px;
-  min-height: 690px;
-  max-height: 690px;
+  min-height: 665px;
+  max-height: 665px;
   position: relative;
 }
 .product-name:after {
@@ -1280,12 +1282,12 @@ nav ul > li ul li a:hover {
   left: 0;
   top: 0;
   min-width: 960px;
-  min-height: 690px;
-  max-height: 690px;
+  min-height: 665px;
+  max-height: 665px;
 }
 .product-name .container {
   position: relative;
-  min-height: 690px;
+  min-height: 665px;
   padding-top: 35px;
 }
 .product-name .container .title-main span, .product-name .container .title-second span {
@@ -1308,14 +1310,11 @@ nav ul > li ul li a:hover {
   margin-right: 25px;
   display: inline-block;
   text-shadow: 0 2px 0 #985938;
+  vertical-align: middle;
+  line-height: 50px;
+  margin-top: -5px;
   font-size: 46px;
   font-weight: 600;
-}
-.product-name .container .product-name-order .btn {
-  height: auto;
-  width: auto;
-  padding: 20px;
-  font-size: 16px;
 }
 
 .product-info {
@@ -1382,17 +1381,21 @@ nav ul > li ul li a:hover {
 .product-info-inner-description p a:hover {
   text-decoration: none;
 }
-.product-info .btn-holder {
-  text-align: right;
+.product-info .btn-holder:after {
+  content: "";
+  display: table;
+  clear: both;
 }
 .product-info .btn-holder p {
-  display: inline-block;
+  float: right;
   font-size: 38px;
   font-weight: 600;
   margin-right: 30px;
+  line-height: 53px;
 }
 .product-info .btn-holder .btn {
   margin-left: 10px;
+  float: right;
 }
 
 .product-characteristic {
@@ -1435,10 +1438,9 @@ nav ul > li ul li a:hover {
 }
 
 .product-video {
-  background: #000000;
+  height: 715px;
 }
 .product-video-inner {
-  background: url(../img/video_bg.jpg) no-repeat center;
   max-width: 1800px;
   min-width: 960px;
   min-height: 715px;
@@ -1463,13 +1465,15 @@ nav ul > li ul li a:hover {
   font-size: 38px;
   font-weight: 600;
   margin-right: 30px;
+  vertical-align: middle;
+  margin-top: -5px;
 }
 .product-video-inner .container .btn-holder .btn {
   margin-left: 10px;
 }
 
 .product-model {
-  background: url(../img/model_bg.jpg) no-repeat;
+  background: url(../img/model_bg.jpg) no-repeat center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -ms-background-size: cover;
@@ -1485,6 +1489,8 @@ nav ul > li ul li a:hover {
   display: inline-block;
   font-size: 38px;
   font-weight: 600;
+  vertical-align: middle;
+  margin-top: -5px;
 }
 .product-model .btn-holder .btn {
   margin-left: 10px;
@@ -1563,8 +1569,8 @@ nav ul > li ul li a:hover {
 .product-model .box {
   display: none;
   position: absolute;
-  top: 0;
-  right: 50px;
+  top: 10px;
+  right: 0;
   width: 525px;
   text-align: center;
   z-index: 5;
@@ -1621,6 +1627,8 @@ nav ul > li ul li a:hover {
   display: inline-block;
   font-size: 38px;
   font-weight: 600;
+  vertical-align: middle;
+  margin-top: -6px;
 }
 .product-modifications-left .image-holder {
   float: left;
@@ -1719,6 +1727,8 @@ nav ul > li ul li a:hover {
   display: inline-block;
   font-size: 38px;
   font-weight: 600;
+  vertical-align: middle;
+  margin-top: -5px;
 }
 .product-order-inner .btn-holder .btn {
   margin-left: 10px;

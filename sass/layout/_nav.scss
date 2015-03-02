@@ -47,7 +47,7 @@ $menu-height: 65px;
                     color: $black;
                     background: $yellow;
                     @include border-radius (50%);
-                    padding: 3px 2px;
+                    padding: 3px 3px 3px 2px;
 
                     font: {
                         size: 17px;
@@ -99,7 +99,7 @@ nav {
                 display: block;
                 color: $while-darken;
                 text-transform: uppercase;
-                padding: 15px 10px 27px;
+                padding: 15px 10px 26px;
                 font: {
                     size: 16px;
                     weight: bold;
@@ -127,7 +127,7 @@ nav {
             ul {
                 padding-bottom: 5px;
                 position: absolute;
-                top: 58px;
+                top: 57px;
                 z-index: 5;
                 visibility: hidden;
                 opacity: 0;

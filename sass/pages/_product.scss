@@ -1,8 +1,8 @@
 
 .product-name {
     min-width: $min-slider-width;
-    min-height: 690px;
-    max-height: $max-slider-height;
+    min-height: 665px;
+    max-height: 665px;
     position: relative;
     &:after {
         content: '';
@@ -20,12 +20,12 @@
         left: 0;
         top: 0;
         min-width: $min-slider-width;
-        min-height: 690px;
-        max-height: $max-slider-height;
+        min-height: 665px;
+        max-height: 665px;
     }
     .container {
         position: relative;
-        min-height: 690px;
+        min-height: 665px;
         padding-top: 35px;
         .title-main {
             span {
@@ -48,18 +48,16 @@
                 margin-right: 25px;
                 display: inline-block;
                 text-shadow: 0 2px 0 #985938;
+                vertical-align: middle;
+                line-height: 50px;
+                margin-top: -5px;
                 font: {
                     size: 46px;
                     weight: $bold;
                 }
             }
             .btn {
-                height: auto;
-                width: auto;
-                padding: 20px;
-                font: {
-                    size: 16px;
-                }
+
             }
         }
     }
@@ -123,15 +121,17 @@
         }
     }
     .btn-holder {
-        text-align: right;
+        @include clearfix;
         p {
-            display: inline-block;
+            float: right;
             font-size: 38px;
             font-weight: $bold;
             margin-right: 30px;
+            line-height: 53px;
         }
         .btn {
             margin-left: 10px;
+            float: right;
         }
     }
 }
@@ -168,9 +168,8 @@
 }
 
 .product-video {
-    background: $black;
+    height: 715px;
     &-inner {
-        background: url(../img/video_bg.jpg) no-repeat center;
         max-width: 1800px;
         min-width: 960px;
         min-height: 715px;
@@ -192,6 +191,8 @@
                     font-size: 38px;
                     font-weight: $bold;
                     margin-right: 30px;
+                    vertical-align: middle;
+                    margin-top: -5px;
                 }
                 .btn {
                     margin-left: 10px;
@@ -202,7 +203,7 @@
 }
 
 .product-model {
-    background: url(../img/model_bg.jpg) no-repeat;
+    background: url(../img/model_bg.jpg) no-repeat center;
     @include background-size (cover);
     padding-top: 40px;
     padding-bottom: 70px;
@@ -213,6 +214,8 @@
             display: inline-block;
             font-size: 38px;
             font-weight: $bold;
+            vertical-align: middle;
+            margin-top: -5px;
         }
         .btn {
             margin-left: 10px;
@@ -282,8 +285,8 @@
     .box {
         display: none;
         position: absolute;
-        top: 0;
-        right: 50px;
+        top: 10px;
+        right: 0;
         width: 525px;
         text-align: center;
         z-index: 5;
@@ -334,6 +337,8 @@
                     display: inline-block;
                     font-size: 38px;
                     font-weight: $bold;
+                    vertical-align: middle;
+                    margin-top: -6px;
                 }
             }
         }
@@ -436,6 +441,8 @@
                 display: inline-block;
                 font-size: 38px;
                 font-weight: $bold;
+                vertical-align: middle;
+                margin-top: -5px;
             }
             .btn {
                 margin-left: 10px;
