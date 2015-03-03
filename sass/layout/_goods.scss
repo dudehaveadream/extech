@@ -22,6 +22,7 @@
             img.item {
                 margin-left: -100px;
                 height: $goods-height;
+                @include transition (all, 0.5s, linear);
             }
             .pouring {
                 position: absolute;
@@ -40,7 +41,7 @@
                 padding: 15px 7px 10px;
                 text-align: center;
                 z-index: 10;
-                @include transition (all, 0.5s, linear);
+                @include transition (all, 0.4s, linear);
                 &:before {
                     content: '';
                     position: absolute;
@@ -81,6 +82,9 @@
                 }
             }
             &:hover {
+                img.item {
+                    @include scale (1.1);
+                }
                 .pouring {
                     background: rgba(99,99,99,.0);
                 }

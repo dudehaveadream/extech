@@ -67,7 +67,7 @@
         top: 0;
         z-index: 3;
         height: 450px;
-
+        overflow: hidden;
         img {
             z-index: -2;
             margin-top: -200px
@@ -87,6 +87,9 @@
     text-align: left;
     .item-image {
         left: 550px;
+        img {
+            margin-left: -400px;
+        }
         &:after {
             box-shadow: inset 125px 0 170px #161616;
         }
@@ -102,6 +105,9 @@
     text-align: right;
     .item-image {
         right: 550px;
+        img {
+            margin-right: -400px;
+        }
         &:after {
             box-shadow: inset -125px 0 170px #161616;
         }

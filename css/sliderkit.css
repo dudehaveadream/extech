@@ -40,7 +40,7 @@
 /*---------------------------------
  *  Panels
  *---------------------------------*/
-.sliderkit .sliderkit-panel{z-index:1;position:absolute;overflow:hidden; background: #232323;}
+.sliderkit .sliderkit-panel{z-index:1;position:absolute;overflow:hidden; background: url(../img/garage.jpg);}
 .sliderkit .sliderkit-panel-active{z-index:5;}
 .sliderkit .sliderkit-panel-old{z-index:4;}
 
@@ -65,9 +65,9 @@
 .photosgallery-std{width:960px;height:550px;padding:0 0 76px;}
 
 /* Navbar */
-.photosgallery-std .sliderkit-nav{left:0;bottom:0;width:960px;padding:10px;}
-.photosgallery-std .sliderkit-nav-clip ul li{float:left;margin:0 20px 0 0;}
-.photosgallery-std .sliderkit-nav-clip ul li a{display:block;overflow:hidden;margin:0; width: 190px; height: 125px; background: black; line-height: 125px; border: 1px solid #000000; -webkit-transition: all 0.4s linear; -moz-transition: all 0.4s linear; -ms-transition: all 0.4s linear; -o-transition: all 0.4s linear; transition: all 0.4s linear;}
+.photosgallery-std .sliderkit-nav{left:0;bottom:0;width:960px;padding:5px 10px 10px;}
+.photosgallery-std .sliderkit-nav-clip ul li{float:left;margin:0 10px 0 0;}
+.photosgallery-std .sliderkit-nav-clip ul li a{display:block;overflow:hidden;margin:0; width: 160px; height: 125px; background: black; line-height: 125px; border: 1px solid #000000; -webkit-transition: all 0.4s linear; -moz-transition: all 0.4s linear; -ms-transition: all 0.4s linear; -o-transition: all 0.4s linear; transition: all 0.4s linear;}
 .photosgallery-std .sliderkit-nav-clip ul li a img {vertical-align: middle; opacity: .4; -webkit-transition: all 0.4s linear; -moz-transition: all 0.4s linear; -ms-transition: all 0.4s linear; -o-transition: all 0.4s linear; transition: all 0.4s linear;}
 .photosgallery-std .sliderkit-nav-clip ul li.sliderkit-selected a{padding:0;border-color: #ffe400;}
 .photosgallery-std .sliderkit-nav-clip ul li.sliderkit-selected a img {opacity: 1;}
