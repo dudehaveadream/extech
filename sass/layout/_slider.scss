@@ -1,8 +1,6 @@
 #slider {
     width: 100%;
     min-width: 960px;
-    min-height: $min-slider-height;
-    max-height: $max-slider-height;
     position: relative;
     &:after {
         content: '';
@@ -19,8 +17,7 @@
 
 .rslides_container {
     position: relative;
-    min-width: $min-slider-width;
-    min-height: $min-slider-height;
+
 }
 .rslides {
     position: relative;
@@ -28,8 +25,7 @@
     overflow: hidden;
     width: 100%;
     min-width: $min-slider-width;
-    min-height: $min-slider-height;
-    max-height: $max-slider-height;
+    height: 565px;
     padding: 0;
     margin: 0;
     li {
@@ -38,8 +34,7 @@
         display: none;
         width: 100%;
         min-width: $min-slider-width;
-        min-height: $min-slider-height;
-        max-height: $max-slider-height;
+        height: 565px;
         left: 0;
         top: 0;
     }
@@ -53,6 +48,7 @@
         height: auto;
         float: left;
         width: 100%;
+        min-height: 630px;
         min-width: $min-slider-width;
         margin-top: -50px;
         border: 0;

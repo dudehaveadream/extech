@@ -86,9 +86,9 @@
 .category-item-left {
     text-align: left;
     .item-image {
-        left: 550px;
+        left: 450px;
         img {
-            margin-left: -400px;
+            margin-left: -560px;
         }
         &:after {
             box-shadow: inset 125px 0 170px #161616;
@@ -104,9 +104,9 @@
 .category-item-right {
     text-align: right;
     .item-image {
-        right: 550px;
+        right: 450px;
         img {
-            margin-right: -400px;
+            margin-right: -560px;
         }
         &:after {
             box-shadow: inset -125px 0 170px #161616;
