@@ -1,0 +1,146 @@
+.cart {
+    margin-top: 40px;
+    &-inner {
+        padding: 20px;
+        background: #2a2a2a;
+        &-table {
+            width: 100%;
+            border-bottom: 1px solid #ffe400;
+            thead td {
+                font-size: 17px;
+                font-weight: $bold;
+                text-transform: uppercase;
+                padding-bottom: 18px;
+                border-bottom: 1px solid #ffe400;
+            }
+            tbody td {
+                padding: 18px 0;
+                border-bottom: 1px solid #4f4f4f;
+            }
+            tbody tr:last-child td {
+                border-bottom: none;
+            }
+            tbody td.cart-image {
+                width: 60px;
+                .image-holder {
+                    background: #555555;
+                    width: 60px;
+                    height: 60px;
+                    @include border-radius (50%);
+                    img {
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+            }
+            tbody td.cart-name {
+                width: 340px;
+                padding-left: 15px;
+                padding-right: 15px;
+                a {
+                    font-size: 14px;
+                    font-weight: $bold;
+                    text-transform: uppercase;
+                    line-height: 1.3;
+                }
+            }
+            tbody td.cart-amount {
+                input {
+                    width: 50px;
+                    height: 30px;
+                    background: #4f4f4f;
+                    padding: 0 10px;
+                    font-size: 14px;
+                    color: #ffffff;
+                    border: none;
+                }
+                img {
+                    margin-bottom: -3px;
+                    margin-left: 3px;
+                }
+            }
+            tbody td.cart-price,
+            tbody td.cart-summ {
+                font-size: 14px;
+            }
+            tbody td.cart-delete {
+                width: 85px;
+                a {
+                    position: relative;
+                    font-size: 14px;
+                    border-bottom: 1px solid #ffffff;
+                    @include transition (all, 0.3s, linear);
+                    &:hover {
+                        border-color: transparent;
+                    }
+                    &:after {
+                        content: '';
+                        background: url(../img/icons/delete.png) no-repeat;
+                        width: 16px;
+                        height: 19px;
+                        position: absolute;
+                        top: -1px;
+                        margin-right: 5px;
+                        right: 100%;
+                    }
+                }
+            }
+        }
+    }
+    &-total {
+        margin-top: 45px;
+        @include clearfix;
+        &-inner {
+            margin-top: 24px;
+            float: left;
+            p {
+                font-size: 17px;
+                font-weight: $bold;
+                text-transform: uppercase;
+                span {
+                    font-weight: $light;
+                    text-transform: none;
+                    margin-left: 30px;
+                }
+            }
+        }
+        .btn-holder {
+            float: right;
+            .btn {
+                float: right;
+                margin-left: 15px;
+            }
+            .btn-transparent {
+                width: 250px;
+                font-size: 15px;
+            }
+        }
+    }
+    &-info {
+        width: 535px;
+        margin: 40px auto 0;
+        img {
+            float: left;
+            margin-top: 2px;
+        }
+        p {
+            padding-left: 50px;
+            font-size: 17px;
+            font-style: italic;
+            color: #6c6b6b;
+            line-height: 1.2;
+        }
+    }
+}
+
+
+.delivery {
+    padding-top: 80px;
+    padding-bottom: 40px;
+    &-inner {
+        p {
+            margin-top: 35px;
+            font-size: 17px;
+        }
+    }
+}
