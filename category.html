@@ -8,6 +8,7 @@
 
     <!-- Styles -->
     <link href='http://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700,300italic&subset=latin,cyrillic-ext' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="css/magnific-popup.css" />
     <link rel="stylesheet" type="text/css" href="css/main.css" />
     <link rel="stylesheet" type="text/css" href="css/animate.css" />
 
@@ -17,6 +18,7 @@
     <script src="js/custom.js" type="text/javascript"></script>
     <script src="js/animate.js" type="text/javascript"></script>
     <script src="js/wow.js" type="text/javascript"></script>
+    <script src="js/magnific-popup.min.js" type="text/javascript"></script>
     <script>
         $(document).ready(function(){
             wow = new WOW(
@@ -103,7 +105,7 @@
             </ul>
         </nav>
 
-        <div class="basket">
+        <div class="basket holder-popups">
             <div class="basket-inner">
                 <div class="basket-inner-summ">
                     <p>1 289 000  р</p>
@@ -111,7 +113,7 @@
                 </div>
                 <a href="#" class="basket-inner-count"><p>5</p></a>
             </div>
-            <a href="#" class="basket-order">ОФОРМИТЬ<br>ЗАКАЗ</a>
+            <a href="#popup" data-effect="mfp-zoom-in" class="basket-order">ОФОРМИТЬ <br> ЗАКАЗ</a>
         </div>
     </div>
 </div><!-- Menu end -->
@@ -237,6 +239,28 @@
     </div>
 </div><!-- Footer end -->
 
+<!-- Popup's -->
+<div id="popup" class="main-popup mfp-with-anim mfp-hide">
+    <h1>заполните форму</h1>
+    <p>и наш менеджер перезвонит Вам, чтобы <span>проконсультировать Вас</span> или помочь <span>совершить заказ</span></p>
+    <form>
+        <div class="input-holder">
+            <label>Введите имя:</label>
+            <input type="text" placeholder="Вася" class="name">
+        </div>
+        <div class="input-holder">
+            <label>Введите email:</label>
+            <input type="text" placeholder="email@service.ru" class="email">
+        </div>
+        <div class="input-holder">
+            <label>Введите телефон:</label>
+            <input type="text" placeholder="+7 (926) 325-72-72" class="phone">
+        </div>
+        <div class="btn-holder">
+            <input type="submit" class="btn btn-big btn-yellow" value="ОФОРМИТЬ ЗАКАЗ">
+        </div>
+    </form>
+</div>
 
 </body>
 </html>
